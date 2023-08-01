@@ -1,0 +1,53 @@
+.date-range{
+  position: relative;
+  .date-range-header{
+    display: flex;
+    .date-range-title{
+      cursor: pointer;
+      border-radius: 3px;
+      background: lightblue;
+      display: inline-block;
+      padding: 6px;
+    }
+    .btn{
+      margin-left: 10px;
+    }
+  }
+}
+.modal-daterange{
+  max-width: 600px;
+  .date-range-value{
+    padding: 5px 10px 0px 10px;
+    color: white;
+    span{
+      margin-left: 10px;
+    }
+  }
+  .rdr-WeekDays {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .rdr-Days {
+    width: 186px;
+  }
+}
+
+@media (min-width: 576px) {
+  .modal-daterange {
+    max-width: 600px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-daterange {
+    .modal-content {
+      .modal-body {
+        overflow: auto;
+        .rdr-DateRange {
+          min-width: 550px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.component-report-container {
+  .report-container-table {
+    width: 100%;
+    tr {
+      height: 25px;
+    }
+    thead {
+      background-color: #64d1ff;
+      tr {
+        th {
+          text-align: center;
+          border: 1px solid #ddd;
+          vertical-align: bottom;
+          min-width: 30px;
+          cursor: pointer;
+          font-size: 14px;
+          padding: 8px;
+        }
+        .th-sunday {
+          color: red;
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          text-align: center;
+          border: 1px solid #ddd;
+          vertical-align: middle;
+          cursor: cell;
+        }
+        .td-reported {
+          background-color: #afafaf;
+        }
+      }
+    }
+  }
+}

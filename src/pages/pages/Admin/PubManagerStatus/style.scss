@@ -1,0 +1,157 @@
+.insert-pub-checkbox-content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    align-items: center;
+    cursor: pointer;
+
+    .insert-pub-checkbox {
+        margin-right: 5px;
+        font-size: 20px;
+    }
+}
+
+.container-page-pub-manager-status {
+    @media (max-width: 550px) {
+        min-width: 550px;
+        overflow: auto;
+    }
+
+    .pub-manager-status-search-panel {
+        width: 100%;
+    }
+
+    .pub-manager-container {
+        background-color: #fff;
+        padding: 10px 10px;
+        margin-top: 12px;
+
+        .pub-manager-table-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .table-title {
+                margin-top: 10px;
+                margin-bottom: 16px;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .right-button-content {
+                .control-button {
+                    background-color: white;
+                    border-radius: 4px;
+                    color: black;
+                    padding: 8px 20px;
+                    border: 1px solid #c8c8c8;
+                }
+
+                .control-button:hover {
+                    background-color: #555555;
+                    border-radius: 4px;
+                    color: white;
+                }
+            }
+        }
+
+        .pub-manager-detail-show {
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .pub-manager-detail-show:hover {
+            text-decoration: underline;
+        }
+
+        .pubmanager-btn-enable {
+            background-color: white;
+            border-radius: 4px;
+            color: black;
+            border: 2px solid #555555;
+        }
+
+        .pubmanager-btn-enable:hover {
+            background-color: #555555;
+            border-radius: 4px;
+            color: white;
+        }
+
+        .pubmanager-btn-enable:disabled {
+            background-color: gray;
+            border-radius: 4px;
+            color: white;
+            cursor: not-allowed;
+        }
+    }
+}
+
+.container-page-pubmanager-detail {
+    .container-page-pubmanager-info {
+        background-color: #fff;
+        padding: 10px 10px;
+        margin-top: 10px;
+
+        .pubmanager-info-title {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .pubmanager-info-content {
+            margin-top: 10px;
+
+            .page-title-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 10px;
+
+                .pubmanager-btn-disable {
+                    background-color: white;
+                    color: black;
+                    padding: 8px 20px;
+                    border: 1px solid #c8c8c8;
+                }
+
+                .pubmanager-btn-disable:hover {
+                    background-color: #555555;
+                    color: white;
+                }
+            }
+
+            .pubmanager-info-table {
+                width: 100%;
+            }
+
+
+            .button-group-pub-manage {
+                display: flex;
+                flex-direction: row;
+
+                .button-pub-manage {
+                    margin-left: 10px;
+                    background-color: white;
+                    color: black;
+                    border: 1px solid #c8c8c8;
+                    padding: 8px 20px;
+
+                }
+
+                .button-pub-manage:hover {
+                    background-color: #555555;
+                    color: white;
+                }
+            }
+
+        }
+    }
+
+}
+
+.enable-user-modal-body {
+    .container-component-search-inputer {
+        border: 1px solid #c8c8c8;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,115 @@
+@import '../../../assets/styles/variable';
+
+.main-footer3 {
+    background: #f7f3f0;
+    text-align: center;
+    margin-top: 20px;
+
+    .footer-container {
+        width: 100%;
+        margin:auto;
+        padding: 10px 0px;
+        color: black;
+
+        div {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: black;
+            margin-left: 10px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 1200px;
+        }
+    }
+}
+
+.main-footer {
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+
+    color: #a2abb7;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 8px $gob_page_main_margin;
+    background: #f7f3f0;
+
+    .footer-teaching-admin {
+        position: absolute;
+        right: 150px;
+        bottom: 8px;
+        padding: 0;
+        cursor: pointer;
+
+        span {
+            cursor: pointer;
+            padding: 0px 35px;
+            color: #a2abb7;
+        }
+
+        u {
+            cursor: default;
+            padding: 0px 35px;
+        }
+
+        .no-href {
+            cursor: default;
+            color: #747c84;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.main-footer2 {
+    font-size: 18px;
+    position: absolute;
+    bottom: 53px;
+    right: 80px;
+    position: fixed;
+    z-index: 100;
+    @media screen and (max-width: 1366px) {
+        font-size: 12px;
+        bottom: 36px;
+        right: 54px;
+    }
+    @media screen and (max-width: 1024px) {
+        font-size: 12px;
+        bottom: 36px;
+        right: 54px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main-footer2 {
+        position: relative;
+        right: 0;
+        margin-left: 10px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+.footerContainer {
+    position: absolute;
+    width: 100%;
+    bottom: 45px;
+
+    .footer-center {
+        text-align: center;
+
+        p {
+            margin: 0;
+            color: #fff;
+            @media (max-width: 1080px) {
+                font-size: 4vw;
+            }
+        }
+    }
+}

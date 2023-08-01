@@ -1,0 +1,54 @@
+.apiform-extended-input-div {
+  position: relative;
+  .apiform-extended-input {
+    height: 27px;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid #acacac;
+    width: 100%;
+    font-size: 15px;
+    background-color: transparent;
+    color: black;
+    padding: 0;
+    z-index: 100;
+    &:focus{
+      outline: none;
+      border-color: #3399cc;
+      border-width: 2px;
+      padding-top: 1px;
+      &~.apiform-extended-input-label {
+        color: #666666;
+        font-size: 11px;
+        top: 6px;
+        font-weight: 500;
+        transform: translateY(-140%);
+      }
+    }
+  }
+  .apiform-extended-input-label {
+    position: absolute;
+    color: #bbbbbb;
+    font-size: 15px;
+    top: 2px;
+    left: 0;
+    z-index: 1;
+    letter-spacing: 1px;
+    pointer-events: none;
+    cursor: text;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    -ms-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+  }
+}
+
+.apiform-extended-input-div-hasValue {
+  .apiform-extended-input-label {
+    color: #666666;
+    font-size: 11px;
+    top: 6px;
+    font-weight: 500;
+    transform: translateY(-140%);
+  }
+}

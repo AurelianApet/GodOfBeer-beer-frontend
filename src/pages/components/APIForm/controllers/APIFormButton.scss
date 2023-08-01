@@ -1,0 +1,28 @@
+.apiform-button-div {
+    cursor: pointer;
+    text-align: right;
+
+    .apiform-submit-button {
+        margin: 10px auto;
+    }
+
+    & > i {
+        font-size: 25px;
+        color: #44b6ae;
+        cursor: pointer;
+    }
+
+    .apiform-button-disabled {
+        color: #DBE3EB;
+        cursor: not-allowed;
+    }
+
+    .apiform-button {
+        background: white !important;
+        box-shadow: none;
+        color: black !important;
+        font-size: 14px;
+        border: 1px solid #c8c8c8;
+        padding: 8px 20px;
+    }
+}

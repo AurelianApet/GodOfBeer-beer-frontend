@@ -1,0 +1,128 @@
+.container-page-pubmanager {
+    .container-page-pubmanager-background {
+        background-color: #fff;
+        padding: 10px 10px;
+        margin-top: 10px;
+
+        .pub-data-info-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        .pub-detail-show {
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .pub-detail-show:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.container-page-sellstatus {
+    .container-page-pubmanager-background {
+        background-color: #fff;
+        padding: 10px 10px;
+        margin-top: 10px;
+
+        .pub-data-info-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 15px;
+
+            .date-range {
+                float: right;
+            }
+        }
+
+        .pub-detail-show {
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .pub-detail-show:hover {
+            text-decoration: underline;
+        }
+
+        .sell-status-graph {
+            width: 200px;
+            height: 10px;
+
+            div {
+                height: 10px;
+                background: #75abfd;
+            }
+        }
+        
+    }
+}
+
+.seller-statistic-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    .seller-statistic-title {
+      font-weight: bold;
+      padding-left: 20px;
+    }
+  }
+.container-page-pubmanager-detail {
+    .container-page-pubmanager-detail-background {
+        background-color: #fff;
+        padding: 10px 16px;
+        margin-top: 10px;
+
+        .pub-data-info-header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .pub-data-info-title {
+                font-size: 16px;
+                font-weight: bold;
+                margin-top: 10px;
+                margin-bottom: 15px;
+            }
+
+            .btn-seller-detail-show {
+                background-color: white;
+                color: black;
+                border: 1px solid #c8c8c8;
+                padding: 8px 20px;
+                margin-left: 10px;
+
+                &:hover, &.active {
+                    background-color: #555555;
+                    border-radius: 4px;
+                    color: white;
+                }
+            }
+        }
+
+        .pubmanager-detail-content {
+            display: flex;
+            flex-direction: row;
+
+            .pubmanager-detail-table {
+                width: 100%;
+            }
+
+            .btn-seller-detail-show:hover {
+                background-color: #555555;
+                border-radius: 4px;
+                color: white;
+            }
+        }
+    }
+}
+
+.statistic-daterange {
+    width: unset;
+  }

@@ -1,0 +1,75 @@
+.btn {
+  border: 0;
+  box-shadow: $box-shadow-dark;
+  font-size: $font-size-sm;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 8px $grid-gutter-width;
+  text-transform: uppercase;
+
+  &.btn-sm {
+    padding: .469rem $grid-gutter-width;
+  }
+
+  &.btn-lg {
+    font-size: $font-size-base;
+    padding: 1rem $gutter-lg;
+  }
+
+  &.btn-custom {
+    padding: 1rem 80px;
+  }
+
+  &>i {
+    margin-right: 5px;
+  }
+
+
+  &.btn-secondary {
+    background-color: #44b6ae;
+    color: #FFFFFF;
+
+    &:hover {
+      background-color: #3a9c95;
+    }
+  }
+
+  &.btn-danger {
+    background-color: $accent_color;
+    color: #FFFFFF;
+
+    &:hover {
+      background-color: $accent_hover_color;
+    }
+  }
+
+  &.btn-disagree {
+    background-color: $white;
+    color: $gray-600;
+
+    &:hover {
+      color: $gray-900;
+    }
+  }
+
+  &.disabled {
+    background-color: $gray-200;
+    box-shadow: none;
+    cursor: no-drop;
+  }
+}
+
+.btn-icon {
+  align-items: center;
+  display: flex;
+  height: 36px;
+  justify-content: center;
+  padding: 0;
+  width: 36px;
+}
+
+.loadingWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

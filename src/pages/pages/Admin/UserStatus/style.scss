@@ -1,0 +1,83 @@
+.container-page-user-status {
+    & > div {
+        color: #39454b;
+    }
+
+    @media (max-width: 450px) {
+        min-width: 450px;
+        overflow: auto;
+    }
+
+    .user-status-search-panel {
+        width: 100%;
+    }
+
+    .user-status-container {
+        background-color: #fff;
+        padding: 10px 10px;
+        margin-top: 12px;
+
+        .user-status-table-header {
+            margin-bottom: 26px;
+
+            .table-title {
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+
+        .user-detail-show {
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .user-detail-show:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.container-page-user-detail {
+    background-color: #fff;
+    padding: 10px 10px;
+    margin-top: 12px;
+
+    .container-page-user-info {
+         margin-top: 5px;
+
+        .page-title-container {
+            display: flex;
+            justify-content: space-between;
+
+            .user-info-title {
+                span {
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+            }
+
+            .user-btn-disable {
+                background-color: white;
+                color: black;
+                padding: 8px 20px;
+                border: 1px solid #c8c8c8;
+            }
+
+            .user-btn-disable:hover {
+                background-color: #555555;
+                color: white;
+            }
+        }
+
+        .user-info-content {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+
+            .user-info-table {
+                width: 100%;
+            }
+        }
+    }
+}

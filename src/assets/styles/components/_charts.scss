@@ -1,0 +1,30 @@
+.progress-bar-small {
+  position: relative;
+
+  .center-content {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.card-chart {
+  height: 250px !important;
+  width: 100%;
+}
+
+.recharts-tooltip-wrapper {
+  .recharts-default-tooltip {
+    border-radius: $border-radius;
+    border: 0 !important;
+    box-shadow: $box-shadow-line, $box-shadow-sm;
+    font-size: $font-size-sm;
+    line-height: 1;
+    padding-bottom: .5rem !important;
+  }
+}

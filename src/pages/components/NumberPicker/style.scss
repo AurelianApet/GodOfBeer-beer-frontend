@@ -1,0 +1,43 @@
+.numberPicker-container {
+  float: left;
+  height: 25px;
+  .numberPicker-pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 0.25rem;
+    margin: 0;
+  }
+  li {
+    position: relative;
+    height: 24px;
+    i {
+      cursor: pointer;
+      width: 28px;
+      height: 24px;
+      border: solid 1px #dddddd;
+      text-align: center;
+      padding-top: 3px;
+    }
+    .component-input-container {
+      height: 100%;
+      .input-label {
+        height: 100%;
+        .numberPicker-text {
+          width: 50px;
+          padding: 0;
+          text-align: center;
+          height: 24px;
+          background-color: white;
+        }
+      }
+    }
+  }
+  .disabled {
+    cursor: not-allowed;
+    i {
+      cursor: not-allowed;
+      color: #777;
+    }
+  }
+}

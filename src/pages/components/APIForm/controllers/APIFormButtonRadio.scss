@@ -1,0 +1,29 @@
+.apiform-button-radio-content {
+  display: flex;
+  justify-content: center;
+  @media ( max-width: 500px ) {
+    .button-radio-item {
+      font-size: 12px;
+      height: 20px !important;
+    }
+  }
+  .button-radio-item {
+    cursor: pointer;
+    margin: 0;
+    min-width: 90px;
+    height: 28px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    color: black;
+    background-color: white;
+    text-align: center;
+  }
+  .button-radio-item-checked {
+    color: white;
+    background-color: black;
+  }
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}

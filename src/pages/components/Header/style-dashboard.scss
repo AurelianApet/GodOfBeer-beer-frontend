@@ -1,0 +1,78 @@
+.headerContainer {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    z-index: 999;
+    .logo {
+        padding: 0 30px;
+    }
+    .navigation {
+        display: block;
+		position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        nav {
+            display: block;
+        }
+        .text-right {
+            text-align: right;
+        }
+        .position-relative {
+            position: relative;
+        }
+        .site-menu {
+            margin-bottom: 0;
+        }
+        .site-menu { 
+            li {
+                display: inline-block;
+                div {
+                    cursor: pointer;
+                    text-decoration: none;
+                    color: #fff;
+                    padding: 10px 10px;
+                    display: inline-block;
+                    font-size: 20px;
+                }
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    padding: 10px 10px;
+                    display: inline-block;
+                    font-size: 20px;
+                }
+            }
+        }
+        .font-size1 {
+            font-size: 16px;
+        }
+        .slash {
+            color: gray;
+            font-size: 25px;
+        }
+        .login {
+            margin-left: 20px;
+        }
+    }
+}
+
+.modal-login {
+    width: 400px;
+    margin: 0 auto;
+    .modal-login-header {
+
+    }
+    .modal-login-body {
+
+    }
+    .modal-login-footer {
+        .footer-button {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+}

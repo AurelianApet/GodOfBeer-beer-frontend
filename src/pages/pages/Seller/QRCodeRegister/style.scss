@@ -1,0 +1,102 @@
+.container-page-qrcode-register {
+    background: #f2eed6;
+    padding: 10px;
+
+    .qrcode-register-header {
+        display: flex;
+        justify-content: flex-end;
+
+        & > div {
+            border: 1px #c8c8c8 solid;
+            padding: 8px 20px;
+            cursor: pointer;
+            width: max-content;
+        }
+
+        .qrcode-save-button {
+            margin-right: 50px;
+        }
+
+        .add-qrcode-tag-button {
+            margin-right: 20px;
+        }
+    }
+
+    .qrcode-container {
+        display: flex;
+        width: 100%;
+
+        & > div {
+            width: 50%;
+            padding: 0 10px;
+
+            .qrcode-tag-item {
+                display: flex;
+                margin: 10px 0;
+
+                .qrcode-tag-name {
+                    width: 5em;
+                    margin-left: 5px;
+
+                    & > i {
+                        margin-right: 10px;
+                        cursor: pointer;
+                    }
+                }
+
+                .qrcode-tag-content {
+                    width: calc(100% - 5em);
+
+                    input {
+                        width: 100%;
+                        border: 1px solid #aaa;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal-add-new-tag {
+    .modal-content {
+        .modal-add-new-tag-header {
+            color: black;
+        }
+
+        .modal-add-new-tag-body {
+            & > div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .tag-inputer-container {
+                input {
+                    border: 1px solid #aaa;
+                    width: 7em;
+                    margin: 0 5px;
+                    text-align: center;
+
+                    &::placeholder {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .tag-operation-buttons {
+                margin-top: 20px;
+
+                & > div {
+                    border: 1px #aaa solid;
+                    padding: 0 10px;
+                    cursor: pointer;
+                    width: max-content;
+                }
+
+                .add-new-tag-button {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}

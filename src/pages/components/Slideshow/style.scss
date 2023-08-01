@@ -1,0 +1,69 @@
+.slideshow-modal-dialog{
+  .modal-content {
+    position: relative;
+    .modal-header {
+      position: relative;
+      background-color: #64d1ff;
+      margin-left: 0 !important;
+      .modal-title {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+        color: white;
+        .header-text {
+          margin-bottom: 10px !important;
+        }
+      }
+    }
+    .modal-body {
+      max-height: 70vh;
+      overflow: auto;      
+    }
+    .next-prev-buttons {
+      z-index: 1001;
+      font-size: 30px;
+      color: #ccc;
+      .prev-button {
+        position: absolute;
+        left: -60px;
+        top: calc(50% - 22px);
+        opacity: 0.3;
+        transition: all 0.5s;
+        cursor: pointer;
+        &:hover {
+          opacity: 1;
+          color: #0488cd;
+        }
+        &:active {
+          opacity: 1;
+          color: #ccc;
+        }
+      }
+      .next-button {
+        position: absolute;
+        right: -60px;
+        top: calc(50% - 22px);
+        opacity: 0.3;
+        transition: all 0.5s;
+        cursor: pointer;
+        &:hover {
+          opacity: 1;
+          color: #0488cd;
+        }
+        &:active {
+          opacity: 1;
+          color: #ccc;
+        }
+      }
+    }
+    .modal-page {
+      position: absolute;
+      width: 100px;
+      text-align: center;
+      left: calc(50% - 50px);
+      bottom: -30px;
+      color: #ccc;
+      font-family: 'Arial' !important;
+    }
+  }
+}

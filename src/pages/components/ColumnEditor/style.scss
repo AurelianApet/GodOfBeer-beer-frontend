@@ -1,0 +1,71 @@
+.component-column-editor-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  .component-column-editor {
+    width: 50vw;
+    height: 80vh;
+    margin: 10vh 25vw;
+    position: relative;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: white;
+    padding: 0 10px 10px 10px;
+    .column-editor-header {
+      height: 50px;
+      width: 100%;
+      font-size: 16px;
+      position: relative;
+      &>div {
+        height: 100%;
+        font-weight: bold;
+        padding-top: calc(50px - 2.5rem);
+      }
+      i {
+        top: 10px;
+        font-size: 2rem;
+      }
+      .yes-btn {
+        position: absolute;
+        right: 5rem;
+        cursor: pointer;
+      }
+      .close-btn {
+        position: absolute;
+        right: 1rem;
+        cursor: pointer;
+      }
+    }
+    .column-editor-content {
+      height: calc(100% - 50px);
+      display: flex;
+      font-size: 14px;
+      &>div {
+        width: 50%;
+        height: 100%;
+        overflow: auto;
+        padding: 20px;
+        border: 1px solid rgb(0, 0, 0);
+      }
+      .total-column-list {
+        .column-item {
+          cursor: pointer;
+          i {
+            margin-right: 5px;
+          }
+        }
+      }
+      .selected-column-list {
+        .selected-column-item {
+          cursor: pointer;
+          i {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.component-select-container {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  span {
+    em {
+      top: -2px;
+      padding: 1px 5px 2px;
+    }
+    margin-right: 5px;
+  }
+
+  .error {
+    height: 20px;
+    position: relative;
+    left: lendingusa_spacing_xs - 7;
+    color: $accent_color;
+    padding-left: 18px;
+    font-size: 12px;
+    word-wrap: break-word;
+    font-size: 14px;
+    margin: 0 0 $gob_spacing_xs -2;
+  }
+
+  .control-select {
+    margin-right: 5px;
+  }
+
+  .select-label {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+}

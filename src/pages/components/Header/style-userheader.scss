@@ -1,0 +1,93 @@
+.container-page-header{
+    height: 52px;
+    .main-header{
+        position: relative;
+        display: inline-block;
+        height: 100%;
+        border: 0 none;
+        z-index: 1030;
+        width : 100%;
+        margin:0 auto;
+        background: #F4C921;	
+        overflow: hidden;
+        min-width: 900px;
+        
+        .header-container{
+            width: 1354px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            .logo:hover{
+                text-decoration: none;
+            }
+            .usermode{
+                width: 1354px;;
+                margin: auto;
+            }
+        }
+
+        .logo img{
+            margin-left: 31px;
+            margin-top: 14px;
+        }
+        .logo{
+            -webkit-transition: width 0.3s ease-in-out;
+            -o-transition: width 0.3s ease-in-out;
+            transition: width 0.3s ease-in-out;
+            display: inline-block;
+            text-align: left;
+            width: 220px;
+            font-family: "KoPubWorld Dotum Medium";
+            overflow: hidden;
+            top: 0;
+        }
+        .navbar-custom-menu, .navbar-right{
+            display: flex;
+            margin: auto 10px;
+        }
+
+        .navbar{
+            -o-transition: margin-left 0.3s ease-in-out;
+            transition: margin-left 0.3s ease-in-out;
+            margin-bottom: 0;
+            border: none;
+            /* min-height: 94px; */
+            border-radius: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .navbar-static-top {
+            display: flex;
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            padding-top: 14px;
+            .navbar-custom-menu{
+                display: flex;
+                margin: auto 10px;
+                .nav.navbar-nav {
+                    display: flex;
+                    flex-direction: row;
+                    .logout{
+                        padding-left: 20px;
+                    }
+                }
+            }
+            #borderclass {
+                border-right: 1px solid #df9003;
+                margin: auto 12px;
+                height: 20px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .navbar-static-top {
+                border-radius: 0;
+            }
+        }
+    }
+    
+
+}

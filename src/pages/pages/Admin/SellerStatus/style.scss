@@ -1,0 +1,210 @@
+.container-page-seller-status {
+    & > div {
+        color: #39454b;
+    }
+
+    @media (max-width: 550px) {
+        min-width: 550px;
+        overflow: auto;
+    }
+
+    .seller-status-search-panel {
+        width: 100%;
+    }
+
+    .seller-status-container {
+        background-color: #fff;
+        padding: 10px 10px;
+        margin-top: 12px;
+
+        .seller-status-table-header {
+            margin-bottom: 26px;
+            .table-title {
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+
+        .seller-detail-show {
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .seller-detail-show:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.container-page-seller-detail {
+    background-color: #fff;
+    padding: 10px 10px;
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    .container-page-seller-info {
+        width: 100%;
+        margin-top: 5px;
+
+        .page-title-container {
+            display: flex;
+            justify-content: space-between;
+
+            .privider-info-title {
+                span {
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+            }
+
+            .seller-detail-user-manager {
+                display: flex;
+                margin-left: 30px;
+
+                .user-manager-button {
+                    background-color: white;
+                    border-radius: 4px;
+                    color: black;
+                    padding: 8px 20px;
+                    border: 1px solid #c8c8c8;
+                    margin-left: 10px;
+
+                    &.red-active {
+                        border: 2px solid darkred;
+                    }
+                }
+
+                .user-manager-button:hover {
+                    background-color: #555555;
+                    color: white;
+                }
+            }
+        }
+
+        .seller-user-info-content {
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+
+        .seller-detail-menu-content {
+            margin-top: 10px;
+        }
+
+        .seller-detail-qrcode-content {
+            margin-top: 10px;
+        }
+
+        .menu-title {
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+
+            tr {
+                th {
+                    text-align: center;
+                }
+
+                td {
+                    padding: 10px;
+                    width: max-content;
+                    text-align: center;
+
+                    i {
+                        cursor: pointer;
+                    }
+
+                    input {
+                        border: 1px #aaa solid;
+                        width: 5em;
+                    }
+
+                    div {
+                        width: max-content;
+                    }
+
+                    select {
+                        min-width: 5em;
+                        width: max-content;
+                    }
+
+                    .menu-sort-number {
+                        width: 2em;
+                        text-align: right;
+                        padding: 0 5px;
+                    }
+
+                    .delete-menu-item-button {
+                        border: 1px #aaa solid;
+                        padding: 0 10px;
+                        cursor: pointer;
+                        width: max-content;
+                    }
+                }
+            }
+        }
+
+        .pub-food-menu-content {
+            position: relative;
+
+            .add-new-food-kind {
+                position: absolute;
+                right: 0;
+                top: 0;
+                border: 1px #c8c8c8 solid;
+                padding: 8px 20px;
+                cursor: pointer;
+                width: max-content;
+            }
+
+            .new-food-kind-inputer {
+                position: absolute;
+                right: 0;
+                top: 30px;
+                border: 1px solid #999;
+                padding: 10px;
+                background-color: #f2eed6;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.22);
+
+                input {
+                    border: 1px solid #aaa;
+                    padding: 0 10px;
+                }
+
+                .new-food-kind-inputer-buttons {
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-top: 5px;
+
+                    & > div {
+                        border: 1px #aaa solid;
+                        padding: 0 10px;
+                        cursor: pointer;
+                        width: max-content;
+                    }
+
+                    .save-new-food-kind {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+        .save-menus-button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .save-menus-button {
+                border: 1px #aaa solid;
+                padding: 0 10px;
+                cursor: pointer;
+                width: max-content;
+            }
+        }
+    }
+}

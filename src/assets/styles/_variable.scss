@@ -1,0 +1,213 @@
+// page background
+$gob_page_background: #fff;
+$gob_page_container_background: white;
+$gob_page_inner_margin: 20px;
+$gob_page_main_margin: 30px;
+$gob_page_main_margin_mobile: 20px;
+$gob_mobile_threshold: 575px;
+
+// alibaba
+$gob_page_background_1366: 1366px;
+$gob_page_background_768: 768px;
+$gob_page_background_1920: 1920px;
+
+// Spacing
+$gob_spacing_xs: 12px;
+$gob_spacing_sm: 20px;
+$gob_spacing_md: 28px;
+$gob_spacing_lg: 40px;
+$gob_spacing_xlg: 48px;
+
+$light_gray: #CACACA;
+$gob_gray1: #F2F2F2;
+$gob_gray2: #D1D1D1;
+$gob_gray3: #959595;
+$gob_gray6: #313131;
+
+$main_black: #002147;
+$main_white: #FFFFFF;
+$accent_color: #d71f28;
+$accent_hover_color: #b70008;
+
+$gob_black_40:   rgba(0, 0, 0, 0.4);
+$gob_black_overlay: rgba(#313131, 0.5);
+
+// font size
+$gob_font_xs: 12px;
+$gob_font_md: 20px;
+
+// new variables
+
+$white:    #fff !default;
+$gray-100: #F6FAFE;
+$gray-200: #DBE3EB;
+$gray-300: #A5B0BB;
+$gray-400: #ced4da !default;
+$gray-500: #B0ACBE;
+$gray-600: #6c757d !default;
+$gray-700: #3F556E;
+$gray-800: #343a40 !default;
+$gray-900: #2B445F;
+$black:    #002147;
+
+$grays: () !default;
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
+
+$blue:    #3989E3;
+$indigo:  #6610f2 !default;
+$purple:  #8C6AF6;
+$pink:    #e83e8c !default;
+$red:     #D82028;
+$orange:  #FF954E;
+$yellow:  #ffc107 !default;
+$green:   #00BC6D;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$colors: ();
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800
+  ),
+  $colors
+);
+
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $purple;
+$warning:       $orange;
+$danger:        $red !default;
+$light:         $gray-100;
+$dark:          $black;
+
+$theme-colors: ();
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+  ),
+  $theme-colors
+);
+
+$grid-gutter-width:           15px;
+$gutter-sm:                   15px;
+$gutter-md:                   20px;
+$gutter-lg:                   ($grid-gutter-width * 2);
+
+$form-grid-gutter-width:      14px;
+$form-group-margin-bottom:    15px;
+
+$spacer: $grid-gutter-width;
+$spacers: ();
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .4),
+    2: ($spacer * .8),
+    3: $spacer,
+    4: ($spacer * 1.4),
+    5: ($spacer * 3)
+  ),
+  $spacers
+);
+
+$body-bg:                     $light;
+$body-color:                  $gray-700;
+
+$border-width:                2px;
+
+$border-radius:               6px;
+$border-radius-lg:            12px;
+$border-radius-sm:            3px;
+
+$box-shadow:                  0 4px 40px 0 rgba($black, 0.05);
+$box-shadow-dark:             0 6px 50px 0 rgba($black, 0.1);
+$box-shadow-sm:               0 2px 30px 0 rgba($black, 0.1);
+$box-shadow-line:             0 0 0 $border-width rgba($black, 0.05);
+$box-shadow-line-dark:        0 0 0 $border-width rgba($black, 0.1);
+$box-shadow-headers:          0 -1px 0 0 rgba($black, 0.075);
+$box-shadow-headers-down:     0 1px 0 0 rgba($black, 0.075);
+
+$font-weight-bold:            600;
+
+$headings-margin-bottom:      ($spacer / 4);
+$headings-color:              $gray-900;
+
+$font-size-base:              1rem;
+$font-size-xs:                .784rem;
+$font-size-xxs:               .6875rem;
+
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.5;
+$h4-font-size:                $font-size-base * 1.125;
+$h5-font-size:                $font-size-base;
+$h6-font-size:                $font-size-xxs;
+
+$headings-font-weight:        600;
+
+$input-color-placeholder:     $gray-300;
+
+$input-btn-padding-x:         1.125rem;
+$input-border-color:          $gray-200;
+
+$input-bg:                    $white;
+$input-bg-card:               $light;
+$input-height-inner:          46px;
+
+$card-border-radius:          $border-radius-lg;
+$card-border-color:           rgba($black, .1);
+$card-border-width:           1px;
+
+$list-group-border-color:     inherit;
+$list-group-border-radius:    $border-radius-lg;
+
+$badge-font-size:             65%;
+$badge-font-weight:           $font-weight-bold;
+$badge-border-radius:         $border-radius-sm;
+
+$table-cell-padding:          0.8rem 0.5rem;
+$table-cell-padding-sm:       0.6rem;
+$table-accent-bg:             darken($gray-100, 1%);
+$table-hover-bg:              darken($gray-100, 3%);
+$table-border-width:          1px;
+$table-border-color:          $gray-200;
+$table-head-bg:               $gray-200;
+
+$pagination-border-color:           $gray-200;
+$pagination-hover-bg:               $white;
+$pagination-hover-border-color:     $primary;
+$pagination-disabled-color:         $gray-300;
+$pagination-disabled-border-color:  $gray-200;

@@ -1,0 +1,12 @@
+.apiform-checkbox-content {
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  &>div {
+    margin: 0 auto;
+    cursor: pointer;
+    &>i {
+      margin-right: 10px;
+    }
+  }
+}

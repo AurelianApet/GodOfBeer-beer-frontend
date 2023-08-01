@@ -1,0 +1,28 @@
+.chk_container {
+  font-size: 16px;
+  .chk_checkbox{
+    display: flex;
+    .chk_input {
+      cursor: pointer;
+      margin-top: 1px !important;
+      width: 18px;
+      height: 18px;
+    }
+    .chk_label {
+      cursor: pointer;
+      padding: 0 !important;
+      line-height: 22px;
+      font-weight: 200;
+      margin-left: 5px;
+    }
+    .chk_error {
+      padding-left: 22px;
+      font-size: 12px;
+      color: #d71f28;
+    }
+  }
+  .withoutLabel{
+    align-items: center;
+    justify-content: center;
+  }
+}

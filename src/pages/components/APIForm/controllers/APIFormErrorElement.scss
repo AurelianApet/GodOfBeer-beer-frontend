@@ -1,0 +1,32 @@
+.error-alert {
+  position: absolute;
+  z-index: 10;
+  border: solid 1px rgb(236, 61, 61);
+  background-color: rgb(244, 233, 233);
+  left: 20px;
+  top: 42px;
+  border-radius: 3px;
+  padding: 0 10px;
+  font-size: 0.8rem;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.35), 0px -4px 8px rgba(0, 0, 0, 0.1);
+  &::before {
+    content: '';
+    top: -10px;
+    left: 5%;
+    display: block;
+    height: 10px;
+    width: 10px;
+    margin: 0 0 0 10px;
+    border-width: 0 10px 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent rgb(236, 61, 61) transparent;
+    position: absolute;
+  }
+}
+.error-div {
+  height: 18px;
+  color: #ff6400;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-align: left;
+}

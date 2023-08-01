@@ -1,0 +1,52 @@
+.gob-card-header {
+  color: white;
+  .gob-card-title{
+    margin-left: 30px;
+  }
+  .collapse-button-div{
+    display: inline-block;
+    padding: 0 10px;
+    float: right;
+    position: relative;
+    cursor: pointer;
+  }
+}
+
+.gob-card-body {
+  border: 1px solid;
+}
+
+.gob-card-body-opened {
+  display: block;
+}
+
+.gob-card-body-closed {
+  display: none;
+}
+
+.gob-card-header-admin {
+  background: #3598dc;
+  border-color: #3598dc;
+}
+
+.gob-card-body-admin {
+  border-color: #3598dc;
+}
+
+.gob-card-header-support {
+  background: #3fab8b;
+  border-color: #3fab8b;
+}
+
+.gob-card-body-support {
+  border-color: #3fab8b;
+}
+
+.gob-card-header-evaluation {
+  background: #d05454;
+  border-color: #d05454;
+}
+
+.gob-card-body-evaluation {
+  border-color: #d05454;
+}

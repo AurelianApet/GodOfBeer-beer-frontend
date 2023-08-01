@@ -1,0 +1,131 @@
+.container-page-notice-manage {
+  .notice-manage-add-new-button {
+    display: flex;
+    justify-content: flex-end;
+    margin: 12px 0;
+    .add-new-button {
+      padding: 0px 20px;
+      background: #F4C921;
+      border: 1px solid #cec3b3;
+      border-radius: 5px;
+      color: #fff;
+      margin-left: 5px;
+      height: 31px;
+      line-height: 31px;
+      transition: 0.5s all;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+        background-color: #f2eed6;
+        color: #F4C921;
+      }
+    }
+  }
+  .notice-manage-content {
+    border: 1px solid #cec3b3;
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 18px 26px;
+  }
+}
+.edit-notice-modal {
+  width: max-content;
+  .modal-content {
+    .edit-notice-modal-body {
+      .component-apiform {
+        form {
+          table {
+            tbody {
+              tr {
+                td {
+                  input {
+                    font-size: 12px;
+                    border-radius: 5px;
+                    border: solid 2px #e5e6e7;
+                    width: 395px;
+                  }
+                  textarea {
+                    font-size: 12px;
+                    border-radius: 5px;
+                    border: solid 2px #e5e6e7;
+                    height: 333px;
+                    width: 395px;
+                    resize: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .edit-notice-modal-operation-buttons {
+        display: flex;
+        justify-content: center;
+        &>div {
+          padding: 0px 20px;
+          background: #F4C921;
+          border: 1px solid #cec3b3;
+          border-radius: 5px;
+          color: #fff;
+          margin-left: 5px;
+          height: 31px;
+          line-height: 31px;
+          transition: 0.5s all;
+          cursor: pointer;
+          &:hover {
+            opacity: 0.8;
+            background-color: #f2eed6;
+            color: #F4C921;
+          }
+        }
+        .update-modal-save-button {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+.container-component-notice-item {
+  border: 1px dotted rgb(244, 201, 33);
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px;
+  .notice-header {
+    display: flex;
+    justify-content: space-between;
+    .notice-title {
+      &>i {
+        transform: rotate( 0 );
+        transition: 0.5s all;
+        margin-right: 5px;
+      }
+      .notice-uncolapsed-icon {
+        transform: rotate( 90deg );
+      }
+      span {
+        color: #6984AB;
+      }
+      .notice-name {
+        color: black;
+        margin-left: 5px;
+      }
+    }
+  }
+  .notice-content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 45px;
+    font-size: 14px;
+    margin-top: 20px;
+    .notice-content {
+
+    }
+    .notice-operation-buttons {
+      &>i {
+        cursor: pointer;
+        margin: 0 10px;
+      }
+    }
+  }
+}

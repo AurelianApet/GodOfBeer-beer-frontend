@@ -1,0 +1,85 @@
+.container-page-interception {
+    & > div {
+        color: #39454b;
+    }
+
+    @media (max-width: 500px) {
+        min-width: 500px;
+        overflow: auto;
+    }
+
+    .interception-search-panel {
+        width: 100%;
+    }
+
+    .interception-container {
+        background-color: #fff;
+        padding: 10px 10px;
+        margin-top: 12px;
+
+        .table-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 26px;
+        }
+
+        .interception-detail-show {
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .interception-detail-show:hover {
+            text-decoration: underline;
+        }
+
+        .interception-table-header {
+            .table-title {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.container-page-interception-detail {
+    & > div {
+        color: #39454b;
+    }
+
+    .interception-detail-container {
+        background-color: #fff;
+        padding: 10px 10px;
+        margin-top: 12px;
+
+        .interception-user-manager-name {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .interception-detail-info-table {
+            margin-top: 10px;
+        }
+
+        .interception-btn-group {
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+
+            .interception-btn-enable {
+                margin-top: 10px;
+                margin-left: 20px;
+                padding: 0 20px;
+                background-color: white;
+                border-radius: 4px;
+                color: black;
+                border: 2px solid #555555;
+            }
+
+            .interception-btn-enable:hover {
+                background-color: #555555;
+                border-radius: 4px;
+                color: white;
+            }
+        }
+    }
+}

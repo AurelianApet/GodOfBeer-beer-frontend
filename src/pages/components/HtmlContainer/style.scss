@@ -1,0 +1,8 @@
+.html-container {
+  text-underline-position: under;
+  overflow-wrap: break-word;
+  word-break: keep-all;
+  span {
+    padding-left: 0 !important;
+  }
+}

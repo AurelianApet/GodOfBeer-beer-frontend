@@ -1,0 +1,91 @@
+.container-page-register-status {
+    padding-top: 22px;
+
+    & > div {
+        background-color: #fff;
+        padding: 10px 10px;
+        margin-top: 12px;
+    }
+
+    @media (max-width: 550px) {
+        min-width: 550px;
+        overflow: auto;
+    }
+
+    .register-current-status {
+        .register-current-status-title {
+            font-size: 16px;
+            line-height: 16px;
+            margin-left: 4px;
+            margin-top: 8px;
+            padding-bottom: 8px;
+            color: #767676;
+            font-weight: bold;
+            border-bottom: 1px solid #8e6400;
+        }
+
+        .register-current-status-content {
+            display: flex;
+
+            & > div {
+                width: 33%;
+                display: flex;
+                justify-content: center;
+                margin: 18px auto 12px;
+
+                .register-current-status-image {
+                    width: 70px;
+                    height: 70px;
+                    border: 2px solid #cec3b3;
+                    border-radius: 50%;
+                    box-sizing: border-box;
+                    position: relative;
+
+                    & > img {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        width: 70%;
+                        margin: auto;
+                    }
+                }
+
+                .register-current-status-value {
+                    margin-left: 12px;
+
+                    .register-current-status-value-name {
+                        font-size: 12px;
+                        line-height: 12px;
+                        margin-top: 12px;
+                        margin-bottom: 6px;
+                    }
+
+                    .register-current-status-value-content {
+                        font-size: 30px;
+                        line-height: 30px;
+                        font-weight: normal;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+
+            .register-current-seller-status {
+                border-right: 1px solid #cec3b3;
+                border-left: 1px solid #cec3b3;
+            }
+        }
+    }
+
+    .register-current-status-table {
+        color: #39454b;
+
+        .register-current-status-table-header {
+            .table-title {
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+    }
+}

@@ -1,0 +1,99 @@
+.container-page-provider-status {
+    @media (max-width: 550px) {
+        min-width: 550px;
+        overflow: auto;
+    }
+
+    & > div {
+        color: #39454b;
+    }
+
+    .provider-status-search-panel {
+        width: 100%;
+    }
+
+    .provider-status-container {
+        background-color: #fff;
+        padding: 10px 10px;
+        margin-top: 12px;
+
+        .provider-detail-show {
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .provider-detail-show:hover {
+            text-decoration: underline;
+        }
+
+        .provider-status-table-header {
+            margin-bottom: 24px;
+            margin-top: 3px;
+            .table-title {
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.container-page-provider-detail {
+    background-color: #fff;
+    padding: 10px 10px;
+    margin-top: 12px;
+
+    .container-page-provider-info {
+        margin-top: 11px;
+
+        .provider-info-title {
+            display: flex;
+            justify-content: space-between;
+
+            span {
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            .provider-btn-disable {
+                background-color: white;
+                border-radius: 4px;
+                color: black;
+                padding: 8px 20px;
+                border: 1px solid #c8c8c8;
+            }
+
+            .provider-btn-disable:hover {
+                background-color: #555555;
+                border-radius: 4px;
+                color: white;
+            }
+        }
+
+        .provider-info-content {
+            margin-top: 10px;
+            margin-left: 5px;
+            display: flex;
+            flex-direction: row;
+
+            .provider-info-table {
+                width: 100%;
+            }
+        }
+    }
+
+    .container-page-provider-beer-info {
+        margin-top: 30px;
+
+        .provider-beer-title {
+            span {
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+
+        .provider-beer-content {
+            margin-top: 10px;
+        }
+    }
+}

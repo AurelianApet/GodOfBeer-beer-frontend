@@ -1,0 +1,23 @@
+.datetime-label {
+    display: flex;
+    align-items: center;
+    //position: relative;
+    .back-span {
+        background-color: #fff !important;
+        min-width: 50px;
+        text-align: right;
+        margin-left: 5px;
+        em {
+            top: -2px;
+            padding: 1px 5px 2px;
+        }
+    }
+}
+
+.error { 
+    margin-top: 5px;
+}
+
+.rdtPicker {
+    width: 100%;
+}

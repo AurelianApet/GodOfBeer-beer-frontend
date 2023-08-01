@@ -1,0 +1,133 @@
+.container-page-seller-statistic {
+    table {
+        tr {
+            td, th {
+                padding: 5px 2px;
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+
+        .total-sum-tr {
+            td {
+                border-bottom: 1px #007bff solid;
+            }
+        }
+
+        .final-sum-tr {
+            td {
+                font-weight: bold;
+            }
+        }
+    }
+
+    & > div {
+        margin-top: 50px;
+        background-color: #fff;
+        border: 1px solid #cec3b3;
+        border-radius: 6px;
+        padding: 20px 5px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        .seller-statistic-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+
+            .seller-statistic-title {
+                font-weight: bold;
+                padding-left: 20px;
+            }
+        }
+    }
+
+    .container-component-period-statistic {
+        .period-statistic-table {
+            table {
+                tr {
+                    td, th {
+                        border: 1px solid #888;
+                    }
+                }
+            }
+        }
+    }
+
+    .container-component-menu-statistic {
+        .menu-statistic-table {
+            table {
+                tr {
+                    th {
+                        border-bottom: 1px #007bff solid;
+                    }
+                }
+            }
+        }
+    }
+
+    .container-component-beer-statistic {
+        .beer-statistic-table {
+            table {
+                tr {
+                    th {
+                        border-bottom: 1px #007bff solid;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.payment-detail-modal {
+    .modal-content {
+        .payment-detail-modal-header {
+            color: black;
+            margin: 0 10px;
+            padding: 10px 5px !important;
+            border-bottom: 1px solid #888;
+        }
+
+        .payment-detail-modal-body {
+            table {
+                tbody {
+                    .payment-detail-total {
+                        border-bottom: 1px solid #888;
+
+                        td {
+                            padding-bottom: 10px;
+                        }
+                    }
+
+                    .payment-detail-point {
+                        td {
+                            padding-top: 10px;
+                        }
+                    }
+
+                    .payment-detail-service {
+                        border-bottom: 1px solid #888;
+
+                        td {
+                            padding-bottom: 10px;
+                        }
+                    }
+
+                    .payment-detail-cardPaid {
+                        td {
+                            padding-top: 10px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.statistic-daterange {
+    width: unset;
+}

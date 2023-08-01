@@ -1,0 +1,98 @@
+.option-modal {
+    opacity: 1;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-perspective: 600;
+    perspective: 600;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.22);
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 10005;
+    .option-modal-all {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        border: none;
+        background: none;
+        border-radius: 0px;
+        outline: none;
+        padding: 0px;
+        width: 330px;
+        .option-content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 330px;
+            pointer-events: auto;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 0.3rem;
+            outline: 0;
+            .option-header {
+                display: flex;
+                justify-content: space-between;
+                height: 50px;
+                padding-top: 15px;
+                .option-title {
+                    padding-left: 20px;
+                    color: #083a6d;
+                    font-weight: 700;
+                }
+                .option-close {
+                    cursor: pointer;
+                    padding-right: 10px;
+                }
+            }
+            .option-body {
+                .option-table {
+                    width: 90%;
+                    height: 250px;
+                    .component-table-container {
+                        min-width: 300px !important;
+                        margin-left: 5%;
+                        .table-body {
+                            border: solid 1px #ccc;
+                            .table-responsive {
+                                overflow: auto;
+                                .row-selected {
+                                    background: #d8d8d8 !important;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+                .option-buttons {
+                    margin: 10px auto;
+                    display: flex;
+                    justify-content: space-evenly;
+                    .option-button {
+                        background-color: #3598dc !important;
+                        width: 70px;
+                        border-radius: 0 !important;
+                        height: 30px;
+                        padding: unset !important;
+                        font-weight: 500;
+                        letter-spacing: unset !important;
+                        text-align: center !important;
+                        font-size: 12px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.option-modal-show {
+    display: block;
+}
+
+.option-modal-hide {
+    display: none;
+}

@@ -1,0 +1,93 @@
+.container-component-pub-item {
+    display: flex;
+    margin-top: 20px;
+    font-size: 15px;
+    @media (max-width: 500px) {
+        .pub-item-image {
+            width: max-content !important;
+
+            img {
+                width: 80px !important;
+                height: 80px !important;
+                border-radius: 15px;
+            }
+        }
+        .pub-detail-container {
+            text-align: center;
+            width: 100% !important;
+        }
+    }
+    @media (max-width: 320px) {
+        font-size: 10px !important;
+        .pub-item-image {
+            width: max-content !important;
+
+            img {
+                width: 80px !important;
+                height: 80px !important;
+                border-radius: 15px;
+            }
+        }
+        .pub-detail-container {
+            text-align: center;
+            width: 100% !important;
+        }
+    }
+
+    .pub-item-image {
+        display: flex;
+        padding-right: 10px;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 90px;
+            height: 90px;
+            border-radius: 15px;
+        }
+    }
+
+    .pub-detail-container {
+        color: black;
+        padding-left: 10px;
+        width: calc(100% - 250px);
+
+        .pub-detail-tag-content {
+            display: flex;
+            justify-content: space-between;
+
+            .pub-detail-beer-count {
+                margin-top: 15px;
+                font-weight: bold;
+            }
+        }
+
+        .pub-name {
+            cursor: pointer;
+        }
+
+        .pub-detail-item {
+            text-align: start;
+            display: flex;
+            flex-direction: column;
+
+            &:first-child {
+                margin-bottom: 15px;
+            }
+
+            &.pub-name {
+                flex-direction: row;
+
+                span.point {
+                    margin-left: 30px;
+                    background: #656565;
+                    padding: 3px 10px;
+                    border-radius: 16px;
+                    color: white;
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.noThumbnail {
+  #dropzone-previews-box {
+    .dz-preview {
+      div:nth-child(2) {
+        height: 0;
+      }
+    }
+  }
+}

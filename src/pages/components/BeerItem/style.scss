@@ -1,0 +1,118 @@
+.container-component-beer-item {
+    display: flex;
+    font-size: 15px;
+    margin-top: 12px;
+    color: black;
+
+    .beer-item-image {
+        padding: 10px;
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        & > img {
+            width: 90px;
+            height: 90px;
+        }
+    }
+
+    .beer-detail-container {
+        color: black;
+        padding: 10px;
+        width: 100%;
+
+        .beer-detail-item {
+            margin-bottom: 5px;
+        }
+
+        .beer-name {
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+
+        .beer-like {
+            display: flex;
+
+            .rate-star {
+                width: unset;
+            }
+
+            .beer-like-item {
+                margin-left: 15px;
+            }
+        }
+    }
+
+    .beer-detail-second-container {
+        padding-top: 60px;
+    }
+}
+
+.mobile-container-component-beer-item {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 15px;
+
+    .beer-item-image {
+        padding: 10px;
+        padding-top: 0px;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    .mobile-beer-item-info {
+        display: flex;
+        flex-direction: column;
+
+        .beer-detail-item-like {
+            display: flex;
+            flex-direction: row;
+            padding-left: 10px;
+
+            .rate-star {
+                width: unset;
+            }
+
+            .beer-like-item {
+                margin-left: 5px;
+            }
+        }
+
+        .beer-detail-container {
+            color: #888;
+            margin-bottom: 10px;
+            padding-left: 10px;
+
+            .beer-name {
+                cursor: pointer;
+            }
+        }
+    }
+
+    @media (max-width: 320px) {
+        font-size: 10px !important;
+        .beer-item-image {
+            img {
+                width: 70px;
+                height: 70px;
+            }
+        }
+        .mobile-beer-item-info {
+            .beer-detail-item-like {
+                .rate-star {
+                    & > i {
+                        font-size: 15px !important;
+                    }
+                }
+            }
+        }
+    }
+}

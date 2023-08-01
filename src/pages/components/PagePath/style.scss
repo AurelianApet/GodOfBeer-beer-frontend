@@ -1,0 +1,29 @@
+@import '../../../assets/styles/variable';
+.component-pagepath {  
+  font-size: 18px;
+  font-weight: 700;
+  height: 30px;
+  letter-spacing: 2px;
+  padding-left: 5px;
+  .phead-admin{
+    color: #003399;
+  }
+  .phead-support{
+    color: #39e0cd;
+  }
+  .phead-evaluation{
+    color: #ffbe41;
+  }
+  span {
+    display: flex;
+    i {
+      padding-top: 3px;
+    }
+    div {
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+}

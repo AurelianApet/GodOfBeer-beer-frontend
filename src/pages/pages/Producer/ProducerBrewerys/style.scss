@@ -1,0 +1,535 @@
+.container-page-producer-main {
+    padding-top: 15px;
+    @media (max-width: 550px) {
+        font-size: 13px;
+    }
+
+    & > div {
+        background-color: #fff;
+        padding: 10px 10px;
+    }
+
+    .producer-main-info-container {
+        .info-table {
+            border-bottom: 1px solid #cec3b3;
+
+            .component-apiform {
+                form {
+                    .apiform-table {
+                        tbody {
+                            tr {
+                                .beerImage-content {
+                                    position: relative;
+                                    width: 150px;
+
+                                    & > img {
+                                        width: 150px;
+                                        height: 150px;
+                                        position: absolute;
+                                    }
+                                }
+
+                                .apiform-title {
+                                    width: 8em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .info-table-operation-buttons {
+                display: flex;
+                justify-content: flex-end;
+
+                & > div {
+                    cursor: pointer;
+                    border: 1px solid #ddd;
+                    margin: 5px 10px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+
+        .defail-info-container {
+            .detail-inputer {
+                textarea {
+                    resize: none;
+                }
+            }
+
+            .detail-info-operation-buttons {
+                display: flex;
+                justify-content: flex-end;
+
+                .operation-button {
+                    cursor: pointer;
+                    border: 1px solid #ddd;
+                    margin: 5px 10px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+
+    .producer-change {
+        margin: 3px 0;
+
+        .producer-change-header {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+
+            .producer-title {
+                vertical-align: middle;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .producer-buttons {
+                display: flex;
+
+                .producer-operation-button {
+                    cursor: pointer;
+                    border: 1px solid #c8c8c8;
+                    margin-left: 10px;
+                    padding: 8px 20px;
+
+                    &:hover {
+                        background-color: #555555;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.update-modal {
+
+    .producer-address-btn {
+        button {
+            padding: 5px !important;
+            height: 30px;
+            margin-top: -2px;
+        }
+    }
+
+    max-width: 60% !important;
+    @media (max-width: 650px) {
+        max-width: 100% !important;
+    }
+    @media (max-width: 450px) {
+        max-width: 100% !important;
+        font-size: 12px;
+        .modal-content {
+            .modal-header {
+                .modal-title {
+                    .update-modal-title {
+                        color: black;
+                    }
+                }
+            }
+
+            .update-modal-body {
+                .update-form {
+                    & > div {
+                        display: flex;
+
+                        .component-apiform {
+                            form {
+                                margin: 0;
+
+                                .apiform-table {
+                                    tbody {
+                                        tr {
+                                            td {
+                                                padding: 5px 5px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .container-component-fileUpload-public {
+                            cursor: pointer;
+
+                            & > img {
+                                width: 100px !important;
+                                height: 100px !important;
+                            }
+                        }
+                    }
+
+                    .update-form-second-row {
+                        padding: 10px;
+
+                        .content-title {
+                            margin-right: 10px;
+                            width: 85px;
+                        }
+
+                        .content-textarea {
+                            width: calc(100% - 85px);
+
+                            textarea {
+                                width: 100%;
+                                resize: vertical;
+                            }
+                        }
+                    }
+                }
+
+                .update-modal-operation-buttons {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    & > div {
+                        cursor: pointer;
+                        border: 1px solid #ddd;
+                        margin: 5px 10px;
+                        padding: 5px 10px;
+                    }
+                }
+            }
+        }
+        .modal-header {
+            .modal-title {
+                .update-modal-title {
+                    color: black;
+                }
+            }
+        }
+        .update-modal-body {
+            .update-form {
+                & > div {
+                    display: flex;
+
+                    .component-apiform {
+                        form {
+                            .apiform-table {
+                                tbody {
+                                    tr {
+                                        td {
+                                            padding: 10px 5px;
+
+                                            & > img {
+                                                width: 150px;
+                                                height: 150px;
+                                                position: absolute;
+                                            }
+                                        }
+
+                                        .apiform-title {
+                                            padding-top: 15px;
+                                        }
+
+                                        .beerImage-content {
+                                            width: 150px;
+                                        }
+
+                                        .apiform-title {
+                                            width: 8em;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .container-component-fileUpload-public {
+                        cursor: pointer;
+
+                        & > img {
+                            width: 150px;
+                            height: 150px;
+                        }
+
+                        .container-fileUpload-background {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: unset;
+
+                            .container-fileUpload {
+                                margin: unset;
+                            }
+
+                            .fileUpload-button-div {
+                                top: 45px;
+                            }
+                        }
+                    }
+                }
+
+                .update-form-second-row {
+                    padding: 10px;
+
+                    .content-title {
+                        margin-right: 10px;
+                        width: 85px;
+                    }
+
+                    .content-textarea {
+                        width: calc(100% - 85px);
+
+                        textarea {
+                            width: 100%;
+                            resize: vertical;
+                        }
+                    }
+                }
+            }
+
+            .update-modal-operation-buttons {
+                display: flex;
+                justify-content: flex-end;
+
+                & > div {
+                    cursor: pointer;
+                    border: 1px solid #ddd;
+                    margin: 5px 10px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+
+    .modal-content {
+        .modal-header {
+            .modal-title {
+                .update-modal-title {
+                    color: black;
+                }
+            }
+        }
+
+        .update-modal-body {
+            .update-form {
+                & > div {
+                    display: flex;
+
+                    .component-apiform {
+                        form {
+                            .apiform-table {
+                                tbody {
+                                    tr {
+                                        td {
+                                            padding: 10px 5px;
+
+                                            & > img {
+                                                width: 150px;
+                                                height: 150px;
+                                                position: absolute;
+                                            }
+                                        }
+
+                                        .apiform-title {
+                                            padding-top: 15px;
+                                        }
+
+                                        .beerImage-content {
+                                            width: 150px;
+                                        }
+
+                                        .apiform-title {
+                                            width: 8em;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .container-component-fileUpload-public {
+                        cursor: pointer;
+
+                        & > img {
+                            width: 150px;
+                            height: 150px;
+                        }
+
+                        .container-fileUpload-background {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: unset;
+
+                            .container-fileUpload {
+                                margin: unset;
+                            }
+
+                            .fileUpload-button-div {
+                                top: 45px;
+                            }
+                        }
+                    }
+                }
+
+                .update-form-second-row {
+                    padding: 10px;
+
+                    .content-title {
+                        margin-right: 10px;
+                        width: 85px;
+                    }
+
+                    .content-textarea {
+                        width: calc(100% - 85px);
+
+                        textarea {
+                            width: 100%;
+                            resize: vertical;
+                        }
+                    }
+                }
+            }
+
+            .update-modal-operation-buttons {
+                display: flex;
+                justify-content: flex-end;
+
+                & > div {
+                    cursor: pointer;
+                    border: 1px solid #ddd;
+                    margin: 5px 10px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+
+    .modal-header {
+        .modal-title {
+            .update-modal-title {
+                color: black;
+            }
+        }
+    }
+
+    .update-modal-body {
+        .update-form {
+            & > div {
+                display: flex;
+
+                .component-apiform {
+                    form {
+                        .apiform-table {
+                            tbody {
+                                tr {
+                                    td {
+                                        padding: 10px 5px;
+
+                                        & > img {
+                                            width: 150px;
+                                            height: 150px;
+                                            position: absolute;
+                                        }
+                                    }
+
+                                    .apiform-title {
+                                        padding-top: 15px;
+                                    }
+
+                                    .beerImage-content {
+                                        width: 150px;
+                                    }
+
+                                    .apiform-title {
+                                        width: 8em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .container-component-fileUpload-public {
+                    cursor: pointer;
+
+                    & > img {
+                        width: 150px;
+                        height: 150px;
+                    }
+
+                    .container-fileUpload-background {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: unset;
+
+                        .container-fileUpload {
+                            margin: unset;
+                        }
+
+                        .fileUpload-button-div {
+                            top: 45px;
+                        }
+                    }
+                }
+            }
+
+            .update-form-second-row {
+                padding: 10px;
+
+                .content-title {
+                    margin-right: 10px;
+                    width: 85px;
+                }
+
+                .content-textarea {
+                    width: calc(100% - 85px);
+
+                    textarea {
+                        width: 100%;
+                        resize: vertical;
+                    }
+                }
+            }
+        }
+
+        .update-modal-operation-buttons {
+            display: flex;
+            justify-content: flex-end;
+
+            & > div {
+                cursor: pointer;
+                border: 1px solid #ddd;
+                margin: 5px 10px;
+                padding: 5px 10px;
+            }
+        }
+    }
+}
+
+.change-password-modal {
+    .modal-content {
+        .modal-header {
+            color: black;
+        }
+
+        .modal-body {
+            .component-apiform {
+                form {
+                    table {
+                        tbody {
+                            tr {
+                                td {
+                                    input {
+                                        text-align: center;
+
+                                        &::placeholder {
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

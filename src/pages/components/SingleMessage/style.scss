@@ -1,0 +1,94 @@
+.single-message-container {
+    position: fixed;
+    z-index: 150;
+    .single-message-popup {
+        position: absolute;
+        cursor: auto;
+        width: 240px;
+        min-height: 200px;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.22);
+        
+        &.direction-tl {
+            left: -240px;
+            top: -200px;
+        }
+        &.direction-tr {
+            left: 0px;
+            top: -200px;
+        }
+        &.direction-bl {
+            left: -240px;
+            top: 0px;
+        }
+        &.direction-br {
+            left: 0px;
+            top: 0px;
+        }
+        .single-message-title {
+            padding: 8px 10px;
+            margin: 0;
+            font-size: 14px;
+            color: black;
+            background-color: #dad6d6;
+            border-bottom: 1px solid #ebebeb;
+            border-radius: 5px 5px 0 0;
+            text-align: center;
+        }
+        .single-message-content {
+            padding: 9px 14px 0px 14px;
+            .form-control {
+                left: 50px;
+                margin: 0px;
+                height: 100px;
+                vertical-align: middle;
+                border: 1px solid #e5e5e5;
+                border-radius: 4px;
+                padding: 6px 12px;
+            }
+            .component-textarea-container {
+                .textAreaError {
+                    pointer-events: none;
+                    position: absolute;
+                    top: 55px;
+                    left: 10px;
+                    padding-left: 35px !important;
+                }
+            }
+        }
+        .single-message-buttons {
+            display: block;
+            margin: 10px 0px;
+            margin-left: 0;
+            float: right;
+            padding-right: 20px;
+            .single-message-button-send {
+                color: #FFFFFF;
+                background-color: #3598dc;
+                margin-top: 0px;
+                margin-left: 0px;
+                margin-right: 5px;
+                border-width: 0;
+                padding: 7px 14px;
+                font-size: 14px;
+                outline: none !important;
+                background-image: none !important;
+                filter: none;
+            }
+            .single-message-button-close {
+                color: #333333;
+                background-color: #E5E5E5;
+                margin-top: 0px;
+                margin-left: 0px;
+                margin-right: 5px;
+                border-width: 0;
+                padding: 7px 14px;
+                font-size: 14px;
+                outline: none !important;
+                background-image: none !important;
+                filter: none;
+            }
+        }
+    }
+}

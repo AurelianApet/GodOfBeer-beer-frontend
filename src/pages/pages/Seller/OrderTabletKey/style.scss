@@ -1,0 +1,57 @@
+.container-page-softkey-register {
+    margin-top: -40px;
+
+    .soft-footer {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .soft-container {
+        margin-top: 20px;
+
+        .softkey-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+
+            .softkey-tag-name {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .btn-save-soft {
+        border: 1px solid #c8c8c8;
+        padding: 8px 20px;
+        cursor: pointer;
+        margin: auto;
+        display: inline-block;
+
+        &:hover {
+            background-color: #555555;
+            color: white;
+        }
+    }
+
+    .soft-register-header {
+        display: flex;
+        justify-content: flex-end;
+
+        div {
+            border: 1px solid #c8c8c8;
+            margin-left: 20px;
+            padding: 8px 20px;
+            cursor: pointer;
+        }
+
+        div:hover {
+            background-color: #555555;
+            color: white;
+        }
+    }
+
+    input {
+        border: 1px solid #aaa;
+    }
+}

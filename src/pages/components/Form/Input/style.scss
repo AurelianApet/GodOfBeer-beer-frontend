@@ -1,0 +1,156 @@
+.component-input-container {
+  
+  .input-label{
+    position: relative;
+    display: flex;
+    span {
+      background-color: #fff !important;
+      min-width: 50px;
+      text-align: right;
+      margin-right: 5px;
+      em {
+        top: -2px;
+        padding: 1px 5px 2px;
+      }
+    }
+    .inputClose {
+      position: absolute;
+      right: 1px;
+      top: 1px;
+      opacity: 1;
+      width: 25px;
+      height: 24px;
+      text-align: center;
+      background-color: white;
+      &:hover {
+        cursor: pointer;
+      }
+      .closeBtn {
+        font-size: 20px;
+        color: #A5B0BB;
+        margin: 0px 2px;
+        padding-top: 1.5px;
+      }
+    }
+    .username{
+      position: absolute;
+      top: 0.4rem;
+      left: 0.75rem;
+      font-size: 1rem;
+      cursor: text;
+      -webkit-transition: 0.2s ease-out;
+      -moz-transition: 0.2s ease-out;
+      -o-transition: 0.2s ease-out;
+      -ms-transition: 0.2s ease-out;
+      transition: 0.2s ease-out;
+    }
+    .input-icon{
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      left: 8px;
+      top: 8px;
+      font-size: 18px;
+    }
+    .input-icon-gray{
+      color: #ccc;
+    }
+    .input-icon-red{
+      color: red;
+    }
+    .tooltip {
+      background-color: transparent;
+      color: #002248;
+      font-size: 14px;
+      height: 44px;
+      line-height: 1.4;
+      max-width: none;
+      padding: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+      cursor: text;
+  
+      i {
+        background: url(/assets/icons/info.svg) 50% no-repeat;
+        background-size: contain;
+        bottom: 12px;
+        display: block;
+        height: 20px;
+        position: absolute;
+        right: 12px;
+        width: 20px;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        cursor: pointer;
+      }
+  
+      div {
+        background: #ffffff;
+        border-radius: 6px;
+        bottom: 50px;
+        box-shadow: 0 2px 12px 0 rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.05);
+        opacity: 0;
+        padding: 10px 15px;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+        transition: all 0.15s linear;
+        transform: translate3d(0,10px,0);
+      }
+  
+      &.active div {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+      }
+    }
+    .input-alert {
+      position: absolute;
+      color: #d71f28;
+      left: -10px;
+      top: 4px;
+      animation-name: animation;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+    }
+    .form-control {
+      &:focus{
+        &~.username{
+          font-size: 0.8rem;
+          transform: translateY(-140%);
+        }
+      }
+    }
+    .form-control-error {
+      &::placeholder {
+        color: #d71f28;
+      }
+    }
+  }
+
+  
+
+  .inputError {
+    padding-left: 22px;
+    font-size: 14px;
+    color: $accent_color;
+    text-align: left;
+    margin: 0px !important;
+    height: 21px !important;
+  }
+}
+
+@keyframes animation {
+  0% {
+    transform: scale(0.5)
+  }
+  50% {
+    transform: scale(1.0);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}

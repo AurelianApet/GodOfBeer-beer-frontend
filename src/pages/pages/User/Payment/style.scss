@@ -1,0 +1,69 @@
+.container-page-user-payment {
+  background-color: #fff;
+  padding: 10px 26px;
+  border: 1px solid #cec3b3;
+  border-radius: 6px;
+  margin-top: 10px;
+  .payment-table-title {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .payment-show-detail {
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .payment-show-detail:hover {
+    text-decoration: underline;
+  }
+}
+
+.detail-modal {
+  @media ( max-width: 450px ) {
+    max-width: 100%;
+  }
+  .modal-content {
+    .modal-header {
+      .modal-title {
+        .detail-modal-title {
+          color: black;
+        }
+      }
+    }
+    .detail-modal-body {
+      .detail-form {
+        display: flex;
+        flex-direction: column;
+        .total-sum {
+          td {
+            border-top: 1px solid;
+            padding: 5px 0;
+            border-bottom: 1px solid;
+          }
+        }
+        .menu-title {
+          td {
+            border-top: 3px solid;
+            padding: 5px 0;
+            border-bottom: 1px solid;
+          }
+        }
+        .type-card {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .detail-modal-operation-buttons {
+        display: flex;
+        justify-content: flex-end;
+        &>div {
+          cursor: pointer;
+          border: 1px solid #ddd;
+          margin: 5px 10px;
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+}

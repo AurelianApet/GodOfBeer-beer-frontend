@@ -1,0 +1,35 @@
+.container-beer-menu{
+    border: 1px solid #cec3b3;
+    border-style: solid;
+    border-radius: 6px;
+    background-color: #fff;
+    margin: 0 auto 12px;
+    .div-flex {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 20px;
+        .navigation{
+            overflow: hidden;
+            div {
+                float: left;
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 8px;
+                text-decoration: none;
+                font-size: 15px;
+                font: bold;
+                cursor: pointer;
+            }
+            .nav-items {
+                cursor: pointer;
+                &:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+            }
+        }
+    }
+    
+    
+}

@@ -1,0 +1,660 @@
+.container-page-abroad-brewery {
+    .abroad-brewery-container {
+        min-height: calc(100% - 40px);
+        background-color: #fff;
+        padding: 10px 10px;
+        margin-top: 12px;
+
+        .abroad-brewery {
+            margin: 3px 0;
+
+            .abroad-brewery-header {
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+
+                .abroad-brewery-title {
+                    vertical-align: middle;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+
+                .abroad-brewery-buttons {
+                    display: flex;
+
+                    .abroad-brewery-operation-button {
+                        cursor: pointer;
+                        border: 1px solid #c8c8c8;
+                        margin-left: 10px;
+                        padding: 8px 20px;
+
+                        &:hover {
+                            background-color: #555555;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mobile-container-page-abroad-brewery {
+    background-color: #fff;
+    @media (max-width: 400px) {
+        font-size: 10px;
+    }
+
+    .abroad-brewery-inputer {
+        background-color: #fdd20b;
+        padding: 10px;
+    }
+
+    .abroad-brewery-container {
+        background-color: #fff;
+
+        .abroad-brewery-header {
+            border-bottom: 1px solid #8E6400;
+            font-size: 18px;
+            margin-bottom: 18px;
+
+            .abroad-brewery-filter-panel {
+                display: flex;
+                justify-content: flex-end;
+
+                & > div {
+                    width: 100%;
+                    font-size: 14px;
+                    height: 30px;
+
+                    & > select {
+                        height: 100%;
+                        padding: 0;
+                        padding-left: 20px;
+                    }
+
+                    &:first-child {
+                        margin-right: 20px;
+                    }
+                }
+            }
+
+            .abroad-brewery-title-bar {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 5px;
+
+                .abroad-brewery-sort-buttons {
+                    display: flex;
+
+                    .sort-button {
+                        cursor: pointer;
+                        font-size: 14px;
+                        padding: 0 5px;
+                        border-left: 1px solid #39454b;
+                        height: max-content;
+
+                        &:first-child {
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.container-page-brewery-detail {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #cec3b3;
+    border-radius: 6px;
+
+    .brewery-detail-main-info {
+        display: flex;
+        font-size: 15px;
+        @media (max-width: 500px) {
+            align-items: center;
+            font-size: 13px !important;
+            .brewery-main-image {
+                width: 80px !important;
+
+                .modal-image-container {
+                    & > img {
+                        height: 80px !important;
+                        width: 80px !important;
+                    }
+                }
+            }
+            .brewery-main-info {
+                width: calc(100% - 80px) !important;
+            }
+        }
+
+        .brewery-main-image {
+            margin-right: 20px;
+            width: 150px;
+        }
+
+        .brewery-main-info {
+            width: calc(100% - 150px);
+
+            .brewery-name {
+                font-size: 16px;
+                display: flex;
+                justify-content: space-between;
+                font-weight: bold;
+            }
+
+            .brewery-other-info {
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .abroad-detail-show {
+                    font-weight: bold;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+
+                .abroad-detail-show:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .brewery-detail-description {
+        margin-top: 20px;
+        @media (max-width: 500px) {
+            .brewery-description-content {
+                & > pre {
+                    font-size: 13px !important;
+                }
+            }
+        }
+
+        .brewery-description-title {
+            font-size: 16px;
+            font-weight: bold;
+            padding-right: 20px;
+        }
+
+        .brewery-description-content {
+            padding-top: 10px;
+
+            & > p {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .brewery-beers-items-body {
+        margin-top: 20px;
+
+        .beers-item-title {
+            font-weight: bold;
+            padding-right: 20px;
+        }
+    }
+}
+
+.container-page-abroad-brewery-detail {
+    .abroad-brewery-detail-background {
+        padding: 10px;
+        background-color: white;
+        border-radius: 6px;
+        margin-top: 10px;
+
+        .abroad-brewery-detail-main-info {
+            display: flex;
+            font-size: 15px;
+            @media (max-width: 500px) {
+                align-items: center;
+                font-size: 13px !important;
+                .abroad-brewery-main-image {
+                    width: 80px !important;
+
+                    .modal-image-container {
+                        & > img {
+                            height: 80px !important;
+                            width: 80px !important;
+                        }
+                    }
+                }
+                .abroad-brewery-main-info {
+                    width: calc(100% - 80px) !important;
+                }
+            }
+
+            .abroad-brewery-main-image {
+                margin-right: 20px;
+                width: 150px;
+            }
+
+            .abroad-brewery-main-info {
+                width: calc(100% - 150px);
+
+                .main-info-title {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    span {
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                }
+
+                .main-info-other {
+                    margin-top: 10px;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+
+        .importer-description {
+            padding-top: 40px;
+            @media (max-width: 500px) {
+                & > pre {
+                    font-size: 13px !important;
+                }
+            }
+
+            & > pre {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+.update-modal {
+    max-width: 60% !important;
+    @media (max-width: 650px) {
+        max-width: 100% !important;
+    }
+    @media (max-width: 450px) {
+        max-width: 100% !important;
+        font-size: 12px;
+        .modal-content {
+            .modal-header {
+                .modal-title {
+                    .update-modal-title {
+                        color: black;
+                    }
+                }
+            }
+
+            .update-modal-body {
+                .update-form {
+                    & > div {
+                        display: flex;
+
+                        .component-apiform {
+                            form {
+                                margin: 0;
+
+                                .apiform-table {
+                                    tbody {
+                                        tr {
+                                            td {
+                                                padding: 5px 5px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .container-component-fileUpload-public {
+                            cursor: pointer;
+
+                            & > img {
+                                width: 100px !important;
+                                height: 100px !important;
+                            }
+                        }
+                    }
+
+                    .update-form-second-row {
+                        padding: 10px;
+
+                        .content-title {
+                            margin-right: 10px;
+                            width: 85px;
+                        }
+
+                        .content-textarea {
+                            width: calc(100% - 85px);
+
+                            textarea {
+                                width: 100%;
+                                resize: vertical;
+                            }
+                        }
+                    }
+                }
+
+                .update-modal-operation-buttons {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    & > div {
+                        cursor: pointer;
+                        border: 1px solid #ddd;
+                        margin: 5px 10px;
+                        padding: 5px 10px;
+                    }
+                }
+            }
+        }
+        .modal-header {
+            .modal-title {
+                .update-modal-title {
+                    color: black;
+                }
+            }
+        }
+        .update-modal-body {
+            .update-form {
+                & > div {
+                    display: flex;
+
+                    .component-apiform {
+                        form {
+                            .apiform-table {
+                                tbody {
+                                    tr {
+                                        td {
+                                            padding: 10px 5px;
+
+                                            & > img {
+                                                width: 150px;
+                                                height: 150px;
+                                                position: absolute;
+                                            }
+                                        }
+
+                                        .apiform-title {
+                                            padding-top: 15px;
+                                        }
+
+                                        .beerImage-content {
+                                            width: 150px;
+                                        }
+
+                                        .apiform-title {
+                                            width: 8em;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .container-component-fileUpload-public {
+                        cursor: pointer;
+
+                        & > img {
+                            width: 150px;
+                            height: 150px;
+                        }
+
+                        .container-fileUpload-background {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: unset;
+
+                            .container-fileUpload {
+                                margin: unset;
+                            }
+
+                            .fileUpload-button-div {
+                                top: 45px;
+                            }
+                        }
+                    }
+                }
+
+                .update-form-second-row {
+                    padding: 10px;
+
+                    .content-title {
+                        margin-right: 10px;
+                        width: 85px;
+                    }
+
+                    .content-textarea {
+                        width: calc(100% - 85px);
+
+                        textarea {
+                            width: 100%;
+                            resize: vertical;
+                        }
+                    }
+                }
+            }
+
+            .update-modal-operation-buttons {
+                display: flex;
+                justify-content: flex-end;
+
+                & > div {
+                    cursor: pointer;
+                    border: 1px solid #ddd;
+                    margin: 5px 10px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+
+    .modal-content {
+        .modal-header {
+            .modal-title {
+                .update-modal-title {
+                    color: black;
+                }
+            }
+        }
+
+        .update-modal-body {
+            .update-form {
+                & > div {
+                    display: flex;
+
+                    .component-apiform {
+                        form {
+                            .apiform-table {
+                                tbody {
+                                    tr {
+                                        td {
+                                            padding: 10px 5px;
+
+                                            & > img {
+                                                width: 150px;
+                                                height: 150px;
+                                                position: absolute;
+                                            }
+                                        }
+
+                                        .apiform-title {
+                                            padding-top: 15px;
+                                        }
+
+                                        .beerImage-content {
+                                            width: 150px;
+                                        }
+
+                                        .apiform-title {
+                                            width: 8em;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .container-component-fileUpload-public {
+                        cursor: pointer;
+
+                        & > img {
+                            width: 150px;
+                            height: 150px;
+                        }
+
+                        .container-fileUpload-background {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: unset;
+
+                            .container-fileUpload {
+                                margin: unset;
+                            }
+
+                            .fileUpload-button-div {
+                                top: 45px;
+                            }
+                        }
+                    }
+                }
+
+                .update-form-second-row {
+                    padding: 10px;
+
+                    .content-title {
+                        margin-right: 10px;
+                        width: 85px;
+                    }
+
+                    .content-textarea {
+                        width: calc(100% - 85px);
+
+                        textarea {
+                            width: 100%;
+                            resize: vertical;
+                        }
+                    }
+                }
+            }
+
+            .update-modal-operation-buttons {
+                display: flex;
+                justify-content: flex-end;
+
+                & > div {
+                    cursor: pointer;
+                    border: 1px solid #ddd;
+                    margin: 5px 10px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+
+    .modal-header {
+        .modal-title {
+            .update-modal-title {
+                color: black;
+            }
+        }
+    }
+
+    .update-modal-body {
+        .update-form {
+            & > div {
+                display: flex;
+
+                .component-apiform {
+                    form {
+                        .apiform-table {
+                            tbody {
+                                tr {
+                                    td {
+                                        padding: 10px 5px;
+
+                                        & > img {
+                                            width: 150px;
+                                            height: 150px;
+                                            position: absolute;
+                                        }
+                                    }
+
+                                    .apiform-title {
+                                        padding-top: 15px;
+                                    }
+
+                                    .beerImage-content {
+                                        width: 150px;
+                                    }
+
+                                    .apiform-title {
+                                        width: 8em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .container-component-fileUpload-public {
+                    cursor: pointer;
+
+                    & > img {
+                        width: 150px;
+                        height: 150px;
+                    }
+
+                    .container-fileUpload-background {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: unset;
+
+                        .container-fileUpload {
+                            margin: unset;
+                        }
+
+                        .fileUpload-button-div {
+                            top: 45px;
+                        }
+                    }
+                }
+            }
+
+            .update-form-second-row {
+                padding: 10px;
+
+                .content-title {
+                    margin-right: 10px;
+                    width: 85px;
+                }
+
+                .content-textarea {
+                    width: calc(100% - 85px);
+
+                    textarea {
+                        width: 100%;
+                        resize: vertical;
+                    }
+                }
+            }
+        }
+
+        .update-modal-operation-buttons {
+            display: flex;
+            justify-content: flex-end;
+
+            & > div {
+                cursor: pointer;
+                border: 1px solid #ddd;
+                margin: 5px 10px;
+                padding: 5px 10px;
+            }
+        }
+    }
+}

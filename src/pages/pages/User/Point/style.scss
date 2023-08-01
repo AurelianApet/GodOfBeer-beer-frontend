@@ -1,0 +1,41 @@
+.container-page-user-point {
+  background-color: #fff;
+  padding: 10px 26px;
+  border: 1px solid #cec3b3;
+  border-radius: 6px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  .container-page-main {
+    .point-content-title {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .point-content-value {
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .point-content-value:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.container-page-user-pointdetail {
+  background-color: #fff;
+  padding: 10px 26px;
+  border: 1px solid #cec3b3;
+  border-radius: 6px;
+  margin-top: 10px;
+  .pointdetail-table-title {
+    font-weight: bold;
+    font-size: 20px;
+  }
+}

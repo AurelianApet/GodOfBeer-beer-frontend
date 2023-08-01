@@ -1,0 +1,113 @@
+.shortcut{
+    position: fixed;
+    right: 10px;
+    top: 200px;
+    .links-container{
+        background: transparent;
+        .links-with-ul{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            opacity: 0.9;
+            cursor: pointer;
+            .icon-image{
+                opacity: 0.9;
+                &~.tooltip{
+                    left: -102px;
+                    top: 0px;
+                }
+            }
+            .tooltip-root{
+                padding: 5px 15px;
+                width: 90px;
+                background-color: #babdc1;
+                opacity: 1;
+                &::after{
+                    border-left-color: #babdc1;
+                }
+            }
+            .icon-image-link-container{
+                position: absolute;
+                visibility: hidden;
+                top: 40px;
+                left: 0;
+                width: 40px;
+                transition: all .3s ease-in-out;
+                .links-with-ul{
+                    margin: 20px 0;
+                    transform: scaleY(0.2) scaleX(0.2) translateY(-80px) translateX(0px);
+                    opacity: 0;
+                    transition: all .4s;
+                    .icon-image-link{
+                        opacity: 0;
+                        transition: all .4s;
+                    }
+                    .account{
+                        width: 40px;
+                        height: 40px;
+                        font-size: 22px;
+                        text-align: center;
+                        padding: 9px;
+                        color: white;
+                        background-color: #777ed9;
+                        border-radius: 50%;
+                        opacity: 0.9;
+                    }
+                    .tooltip-evaluation{
+                        padding: 5px 15px;
+                        width: 90px;
+                        background-color: #fcc964;
+                        opacity: 1;
+                        &::after{
+                            border-left-color: #fcc964;
+                        }
+                    }
+                    .tooltip-admin{
+                        padding: 5px 15px;
+                        width: 90px;
+                        background-color: #7fd8fe;
+                        opacity: 1;
+                        &::after{
+                            border-left-color: #7fd8fe;
+                        }
+                    }
+                    .tooltip-support{
+                        padding: 5px 15px;
+                        width: 90px;
+                        background-color: #5ce4d5;
+                        opacity: 1;
+                        &::after{
+                            border-left-color: #5ce4d5;
+                        }
+                    }
+                    .tooltip-account{
+                        padding: 5px 15px;
+                        width: 90px;
+                        background-color: #777ed9;
+                        opacity: 1;
+                        &::after{
+                            border-left-color: #777ed9;
+                        }
+                    }
+                    
+                    &:hover{
+                        box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+                        opacity: 1;
+                    }
+                }
+            }
+            &:hover{
+                .icon-image-link-container{
+                    visibility: visible;
+                    .links-with-ul{
+                        transform: scaleY(1) scaleX(1) translateY(0px) translateX(0px);
+                        opacity: 0.9;
+                        .icon-image-link{
+                            opacity: 0.9;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

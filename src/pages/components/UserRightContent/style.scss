@@ -1,0 +1,15 @@
+.container-page-userrightcontent{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    width: 180px;
+    .margin-top {
+        margin-top: 15px;
+    }
+
+    .contents2 {
+        padding: 0;
+        padding-top: 14px;
+    }
+}

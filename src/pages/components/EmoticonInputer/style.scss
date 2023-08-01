@@ -1,0 +1,46 @@
+.emoticon-inputer {
+  margin: 0px 10px 0px 5px;
+  .drop-down-list-button {
+    i {
+      font-size: 23px;
+      color: #40a9ff;
+      &:hover {
+        color: #33cc33;
+        -webkit-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+        -moz-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+        -o-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+        -ms-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+    }
+  }
+  .drop-down-list-container {
+    max-width: 400px;
+    max-height: 300px;
+    bottom: 40px !important;
+    right: -25px !important;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: unset;
+    .arrow-div {
+      display: none;
+    }
+    .drop-list-item {
+      width: 40px;
+      height: 35px;
+      margin: 1px;
+      padding: unset;
+      border: none;
+      .message-content {
+        img {
+          width: 2rem !important;
+          height: auto;
+        }
+      }
+      &:hover {
+        border: solid 1px #ddd;
+      }
+    }
+  }
+}

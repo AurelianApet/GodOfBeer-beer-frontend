@@ -1,0 +1,40 @@
+.container-page-treeview {
+    height: 100%;
+    .container-up {
+        display: flex;
+        height: 35px;
+        .container-pathbar {
+            width: calc(100% - 250px);
+            padding-right: 5px;
+        }
+        .container-searchbar {
+            width: 250px;
+        }
+        input {
+            width: 100%;
+            height: 35px;
+            padding: 5px 10px;
+            background-color: lightgray;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    }
+    .container-down {
+        display: flex;
+        height: calc(100% - 35px);
+        padding-top: 5px;
+        .container-leftsidebar {
+            width: 300px;
+            background-color: lightgray;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            
+        }
+        .container-maincontent {
+            width: calc(100% - 300px);
+            background-color: lightgray;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    }
+}

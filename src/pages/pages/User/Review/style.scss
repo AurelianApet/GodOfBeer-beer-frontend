@@ -1,0 +1,29 @@
+.container-page-user-review {
+  .user-review-item {
+    box-shadow: 1px 1px 5px 1px #ccc;
+    padding: 10px 0;
+    margin: 10px 0;
+    position: relative;
+    .container-component-beer-item {
+      box-shadow: none;
+    }
+    .user-review-rate {
+      margin-left: 220px;
+    }
+    .user-review-detail {
+      margin-left: 220px;
+      margin-top: 10px;
+    }
+    .delete-review-button {
+      position: absolute;
+      border-radius: 4px;
+      color: black;
+      border: 2px solid #555555;
+      height: 30px;
+      padding:0 15px;
+      cursor: pointer;
+      top: 30px;
+      right: 30px;
+    }
+  }
+}

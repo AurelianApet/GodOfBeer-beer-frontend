@@ -1,0 +1,211 @@
+body.react-confirm-alert-body-element {
+  overflow: hidden;
+}
+
+.react-confirm-alert-blur {
+  filter: url(#gaussian-blur);
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.react-confirm-alert-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+  background: rgba(0, 0, 0, 0.5);
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  opacity: 0;
+  -webkit-animation: react-confirm-alert-fadeIn 0.5s 0.2s forwards;
+  -moz-animation: react-confirm-alert-fadeIn 0.5s 0.2s forwards;
+  -o-animation: react-confirm-alert-fadeIn 0.5s 0.2s forwards;
+  animation: react-confirm-alert-fadeIn 0.5s 0.2s forwards;
+  .confirm-admin{
+    h4{
+      background-color: #3598dc;
+    }
+    button{
+      background-color: #3598dc;
+      color: white;
+      border: none;
+      padding: 5px;
+      &:active{
+        background-color: #06578f;
+      }
+    }
+  }
+  .confirm-support{
+    h4{
+      background-color: #3fab8b;
+    }
+    button{
+      background-color: #3fab8b;
+      color: white;
+      border: none;
+      padding: 5px;
+      &:active{
+        background-color: #1d6451;
+      }
+    }
+  }
+  .confirm-evaluation{
+    h4{
+      background-color: #d05454;
+    }
+    button{
+      background-color: #d05454;
+      color: white;
+      border: none;
+      padding: 5px;
+      &:active{
+        background-color: #891422;
+      }
+    }
+  }
+  .confirm-account{
+    h4{
+      background-color: #777ed9;
+    }
+    button{
+      background-color: #777ed9;
+      color: white;
+      border: none;
+      padding: 5px;
+      &:active{
+        background-color: #6870d4;
+      }
+    }
+  }
+  &>div{
+    width: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.22);
+    background-color: #ddd;
+    border-radius: 0.3rem;
+    h4{
+        background-color: royalblue;
+        color: white;
+        padding: 5px;
+        padding-left: 15px;
+        border-top-left-radius: 0.3rem;
+        border-top-right-radius: 0.3rem;
+        .confirm-preicon {
+          margin-right: 10px;
+        }
+        .red {
+          color: red;
+        }
+        .yellow {
+          color: yellow;
+        }
+    }
+    pre{
+        background-color: #ddd;
+        padding: 5px;
+        padding-left: 15px;
+        font-size: 100% !important;
+        white-space: pre-wrap;
+    }
+    button{
+        width: 70px;
+        margin: 5px 10px;
+        margin-bottom: 20px;
+        float: right;
+        border-radius: 0.3rem;
+        padding: 5px;
+    }
+}
+}
+
+.react-confirm-alert-body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 400px;
+  padding: 30px;
+  text-align: left;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 75px rgba(0, 0, 0, 0.13);
+  color: #666;
+}
+
+.react-confirm-alert-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.react-confirm-alert-body > h1 {
+  margin-top: 0;
+}
+
+.react-confirm-alert-body > h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.react-confirm-alert-button-group {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.react-confirm-alert-button-group > button {
+  outline: none;
+  background: #333;
+  border: none;
+  display: inline-block;
+  padding: 6px 18px;
+  color: #eee;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+@-webkit-keyframes react-confirm-alert-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes react-confirm-alert-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes react-confirm-alert-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes react-confirm-alert-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

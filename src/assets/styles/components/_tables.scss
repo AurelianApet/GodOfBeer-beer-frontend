@@ -1,0 +1,24 @@
+.table {
+  thead {
+    background-color: $table-head-bg;
+  }
+
+  &.table-sm {
+    thead {
+      font-size: $font-size-xs;
+
+      th {
+        padding-bottom: 0.45rem;
+        padding-top: 0.45rem;
+      }
+    }
+
+    tbody {
+      font-size: $font-size-sm;
+
+      tr.clickable-row:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

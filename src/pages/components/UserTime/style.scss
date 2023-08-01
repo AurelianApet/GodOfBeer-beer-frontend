@@ -1,0 +1,25 @@
+.usertime-component {
+  color: #0b65b4;
+  display: flex;
+  .clock-content {
+    margin: 10% auto;
+    .clock-date {
+      &>div {
+        text-align: center;
+      }
+    }
+    .clock-time {
+      display: flex;
+      .clock-time-container {
+        display: flex;
+        font-size: 36px;
+        font-weight: 800;
+        margin: 0 auto;
+        &>div {
+          min-width: 20px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

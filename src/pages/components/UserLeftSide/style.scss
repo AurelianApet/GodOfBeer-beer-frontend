@@ -1,0 +1,14 @@
+.container-page-userleftside{
+    width: 180px;
+    padding-top: 66px;
+    @media (max-width: 400px) {
+        width: 100%;
+    }
+    .margintop{
+        margin-top: 10px;
+    }
+
+    .active-menu {
+        background: #fffadc;
+    }
+}

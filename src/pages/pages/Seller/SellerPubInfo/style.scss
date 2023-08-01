@@ -1,0 +1,129 @@
+.container-page-pubinfo {
+  padding: 20px;
+  background-color: white;
+  .pub-main-info {
+    display: flex;
+    .pub-main-image {
+      margin-right: 20px;
+      &>img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+    .pub-name {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+  .pub-sub-images {
+    margin: 10px 0;
+    position: relative;
+    .pub-sub-images-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .pub-sub-images-add-remove-buttons {
+      position: absolute;
+      top: 0;
+      right: 50px;
+      display: flex;
+      .add-remove-button {
+        cursor: pointer;
+        border: 1px #aaa solid;
+        padding: 5px 10px;
+        &:first-child {
+          margin-right: 20px;
+        }
+      }
+    }
+    .pub-sub-images-container {
+      padding-top: 20px;
+      padding-left: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      .pub-sub-image-item {
+        margin: 5px;
+        position: relative;
+        &>i {
+          position: absolute;
+          cursor: pointer;
+          right: 0;
+          top: 0;
+          color: black;
+          opacity: 0;
+          transition: 0.5s;
+          z-index: 1;
+        }
+        &>img {
+          width: 100px;
+          height: 100px;
+          opacity: 1;
+          transition: 0.5s;
+        }
+        &:hover {
+          &>i {
+            opacity: 1;
+          }
+          &>img {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+  .pub-service-time {
+    .pub-service-time-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .pub-service-time-table {
+      padding-left: 20px;
+      table {
+        tr {
+          th {
+            text-align: center;
+            vertical-align: middle;
+          }
+          td {
+            padding: 5px 10px;
+            text-align: center;
+            input {
+              border: 1px solid #aaa;
+              width: 100%;
+              text-align: center;
+            }
+          }
+          @media (max-width: 400px) {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .pub-content {
+    .pub-content-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    @media (max-width: 400px) {
+      &>textarea {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .pub-info-operation-button {
+    display: flex;
+    justify-content: flex-end;
+    .pub-service-time-save-button {
+      margin-right: 30px;
+      border: 1px #aaa solid;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  }
+}

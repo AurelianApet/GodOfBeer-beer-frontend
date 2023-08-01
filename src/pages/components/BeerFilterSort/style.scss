@@ -1,0 +1,132 @@
+.container-beer-filter-sort-body {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+    .filter-body {
+        display: flex;
+        flex-direction: row;
+
+        .filter-item {
+            display: flex;
+            margin: 0 10px;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            & > span {
+                min-width: max-content;
+                margin-right: 10px;
+            }
+
+            .dropdown {
+                button {
+                    background: none;
+                    border-radius: 20px;
+                    border: 1px solid #c8c8c8;
+                    font-size: 14px;
+                    outline: none;
+                    height: 36px;
+                }
+
+                ul.dropdown-menu {
+                    width: 250px;
+                    border-radius: 15px;
+                    padding: 15px 20px;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 15px;
+
+                        &.title {
+                            justify-content: center;
+                            font-weight: bold;
+                            font-size: 13px;
+                        }
+
+                        label {
+                            margin-bottom: 0px;
+                        }
+
+                        input {
+                            appearance: auto;
+                            width: 15px;
+                            height: 15px;
+                            overflow: hidden;
+                            clip: rect(0, 0, 0, 0);
+                            border: 0;
+                            margin-right: 10px;
+                            margin-top: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sort-body {
+        display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+
+        .filter-item {
+            margin-right: 0px !important;
+        }
+
+        .dropdown-menu {
+            left: -153px !important;
+            padding: 0 !important;
+
+            li {
+                padding: 10px 15px;
+                margin-bottom: 0 !important;
+
+                &:hover, &.active {
+                    background: #c8c8c8;
+                }
+
+
+                &.title {
+                    padding: 15px 15px;
+                    &:hover {
+                        background: none;
+                    }
+                }
+            }
+
+
+        }
+
+        .sort-option-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & > span {
+                min-width: max-content;
+                margin-right: 10px;
+            }
+
+            select {
+                height: 36px;
+                border-radius: 18px;
+                border: 1px solid #cbcbcb;
+                padding-left: 15px;
+                padding-right: 10px;
+                font-size: 14px;
+            }
+        }
+
+        .sort-direction {
+            width: 30px;
+            padding: 10px 0px;
+            text-align: center;
+
+            i {
+                font-size: 20px;
+            }
+        }
+    }
+}

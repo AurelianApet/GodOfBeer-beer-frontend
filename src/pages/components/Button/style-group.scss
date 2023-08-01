@@ -1,0 +1,45 @@
+.btn-group {
+  background-color: $white;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow-dark;
+
+  > .btn {
+    background-color: transparent;
+    border-radius: $border-radius !important;
+    box-shadow: none;
+    color: $gray-600;
+    flex: 1;
+    padding-left: $gutter-sm;
+    padding-right: $gutter-sm;
+    position: relative;
+    white-space: initial;
+
+    &:hover {
+      color: $primary;
+    }
+
+    &:after {
+      background-color: $gray-200;
+      bottom: 8px;
+      content: " ";
+      display: block;
+      position: absolute;
+      right: -2px;
+      top: 8px;
+      width: $border-width;
+      z-index: 0;
+    }
+
+    &:last-of-type:after {
+      display: none;
+    }
+
+    &.active:after {
+      display: none;
+    }
+  }
+}
+
+.btn-group-sm .btn {
+  padding: .469rem 1rem;
+}

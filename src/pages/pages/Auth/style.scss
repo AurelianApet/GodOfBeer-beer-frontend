@@ -1,0 +1,387 @@
+.login-page {
+    background-repeat: no-repeat;
+    height: 100vh !important;
+    position: relative;
+    @media screen and (min-width: 1366px) {
+        background-size: cover;
+    }
+
+    .logo-img-row {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+
+        .logo-image {
+            width: 190px;
+            height: 120px;
+            cursor: pointer;
+        }
+    }
+
+    .form-submit {
+        position: relative;
+        width: 360px;
+        margin: 30px auto;
+        text-align: center;
+
+        .login-form {
+            background-color: #e5edf8;
+            width: 360px;
+            height: 400px;
+            padding: 15px;
+            padding: 10px 30px 15px 30px;
+            border-style: solid;
+            border-color: white;
+            border-width: 0px;
+            box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+
+            .component-apiform {
+                min-width: unset;
+                overflow: visible;
+                height: unset;
+
+                .apiform-table {
+                    tbody {
+                        tr {
+                            margin: 20px 0;
+                            position: relative;
+
+                            td {
+                                min-width: unset;
+                                height: 63px;
+                                padding: 0;
+
+                                .login-button {
+                                    height: 64px;
+                                    padding-top: 27px;
+
+                                    .apiform-button {
+                                        width: 100%;
+                                        border-radius: 0px !important;
+                                        background-color: #3598dc;
+                                        letter-spacing: 3px;
+
+                                        .loadingWrapper {
+                                            svg {
+                                                height: 21px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .apiform-title {
+                                width: 28px;
+                                height: 27px;
+
+                                & > i {
+                                    position: absolute;
+                                    top: 15px;
+                                    left: 0px;
+                                    font-size: 18px;
+                                    color: #699;
+                                }
+                            }
+
+                            .apiform-content {
+                                width: 268px;
+                            }
+
+                            .blank-content {
+                                height: 40px;
+
+                                .border-dotted {
+                                    height: 100%;
+                                }
+                            }
+
+                            .additional-btn-content {
+                                .apiform-button {
+                                    position: absolute;
+                                    font-size: 12px;
+                                    font-weight: 600;
+                                    letter-spacing: 1px;
+                                    height: 48px;
+                                    width: 100px;
+                                }
+
+                                .login-back {
+                                    .apiform-button {
+                                        color: #369;
+                                        left: 0;
+                                        text-align: left;
+                                    }
+                                }
+
+                                .login-register {
+                                    .apiform-button {
+                                        color: #1e89fd;
+                                        right: 0;
+                                        text-align: right;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .row-box {
+                position: relative;
+                margin: 5px 0;
+
+                .login-title {
+                    color: #007bff;
+                    font-size: 20px;
+                    font-weight: 600;
+                    text-align: center;
+                    letter-spacing: 3px;
+                    padding-top: 25px;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+.register-page {
+    background-repeat: no-repeat;
+    height: 100vh !important;
+    position: relative;
+    @media screen and (min-width: 1366px) {
+        background-size: cover;
+    }
+
+    .logo-img-row {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+
+        .logo-image {
+            width: 190px;
+            height: 120px;
+            cursor: pointer;
+        }
+    }
+
+    .form-submit {
+        position: relative;
+        width: 360px;
+        margin: 8px auto 10px auto;
+        text-align: center;
+
+        .login-form {
+            background-color: #e5edf8;
+            width: 360px;
+            height: 510px;
+            padding: 15px;
+            padding: 10px 30px 20px 30px;
+            border-style: solid;
+            border-color: white;
+            border-width: 0px;
+            box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+
+            .component-apiform {
+                min-width: unset;
+                overflow: visible;
+                height: unset;
+
+                .apiform-table {
+                    tbody {
+                        tr {
+                            margin: 20px 0;
+                            position: relative;
+
+                            td {
+                                min-width: unset;
+                                height: 58px;
+                                padding: 0;
+
+                                .register-user-button {
+                                    height: 40px;
+
+                                    .apiform-button {
+                                        width: 100%;
+                                        border-radius: 0px !important;
+                                        background-color: #3598dc;
+                                        letter-spacing: 3px;
+
+                                        .loadingWrapper {
+                                            svg {
+                                                height: 21px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .apiform-title {
+                                width: 28px;
+                                height: 27px;
+
+                                & > i {
+                                    position: absolute;
+                                    top: 15px;
+                                    left: 0px;
+                                    font-size: 18px;
+                                    color: #699;
+                                }
+                            }
+
+                            .apiform-content {
+                                width: 268px;
+                            }
+
+                            .blank-content {
+                                height: 15px;
+
+                                .border-dotted {
+                                    height: 100%;
+                                }
+                            }
+
+                            .register-user-button-content {
+                                height: 40px;
+                            }
+
+                            .additional-btn-content {
+                                height: 33px;
+
+                                .apiform-button {
+                                    position: absolute;
+                                    font-size: 12px;
+                                    font-weight: 600;
+                                    letter-spacing: 1px;
+                                    height: 48px;
+                                    width: 100px;
+                                }
+
+                                .login-back {
+                                    .apiform-button {
+                                        color: #369;
+                                        right: 0;
+                                        text-align: right;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .row-box {
+                position: relative;
+
+                .login-title {
+                    color: #007bff;
+                    font-size: 20px;
+                    font-weight: 600;
+                    text-align: center;
+                    letter-spacing: 3px;
+                    padding-top: 15px;
+                }
+            }
+        }
+    }
+}
+
+.container-page-resetpassword {
+    .resetpassword-form {
+        display: flex;
+        justify-content: center;
+
+        .component-apiform {
+            width: unset;
+
+            form {
+                .apiform-table {
+                    tbody {
+                        tr {
+                            td {
+                                .find-button {
+                                    display: flex;
+                                    justify-content: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/assets/images/dashboard/bg1.png') no-repeat center;
+    background-size: cover;
+
+    .search-container {
+        .logo-box {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .input-box {
+            position: relative;
+            width: 100%;
+
+            @media screen and (min-width: 450px) {
+                width: 450px;
+            }
+
+            i {
+                position: absolute;
+                left: 15px;
+                color: #a6a6a6;
+                top: 11px;
+                font-size: 16px;
+            }
+
+            input {
+                height: 40px;
+                border-radius: 20px;
+                padding-left: 50px;
+                background: white;
+            }
+        }
+
+        .menu-box {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+
+            .menu-item {
+                margin-left: 30px;
+                margin-right: 30px;
+
+                .icon-box {
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: white;
+                    border-radius: 50%;
+
+                    i {
+                        color: #b28c06;
+                    }
+                }
+
+                p {
+                    margin-top: 10px;
+                    text-align: center;
+                    color: white;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.container-photo-attachment {
+  text-align: center;
+  margin: 0 auto;
+  border: none !important;
+  cursor: pointer;
+  .container-component-fileUpload-public {
+    .apiform-photo-container {
+      .apiform-photo-edit-button {
+        position: absolute;
+        .userIcon {
+          font-size: 10vw;
+          color: #ddd;
+        }
+        .modify-photo {
+          color: #aaa;
+          font-size: 20px;
+          &:hover {
+            color: #555;
+          }
+        }
+        .toogle-round-button {
+          color: #aaa;
+          font-size: 20px;
+          margin-left: 10px;
+          &:hover {
+            color: #333;
+          }
+        }
+      }
+      .photo-img-round{
+        border-radius: 100%;
+      }
+    }
+  }
+}
+.container-photo-attachment-nothing {
+  text-align: center;
+  margin: 0 auto;
+  border: none !important;
+  cursor: pointer;
+  .container-component-fileUpload-public {
+    .apiform-photo-container {
+      .apiform-photo-edit-button {
+        .userIcon {
+          font-size: 10vw;
+          color: #ddd;
+        }
+        .modify-photo {
+          color: #aaa;
+          font-size: 20px;
+          &:hover {
+            color: #555;
+          }
+        }
+        .toogle-round-button {
+          color: #aaa;
+          font-size: 20px;
+          margin-left: 10px;
+          &:hover {
+            color: #333;
+          }
+        }
+      }
+      .photo-img-round{
+        border-radius: 100%;
+      }
+    }
+  }
+  
+}

@@ -1,0 +1,45 @@
+.component-query-panel-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  .component-query-panel {
+    width: 50vw;
+    height: 80vh;
+    margin: 10vh 25vw;
+    position: relative;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: white;
+    padding: 0 10px 10px 10px;
+    .title-div {
+      text-align: center;
+      font-size: 25px;
+      padding: 20px;
+      font-weight: bold;
+      letter-spacing: 5px;
+    }
+    .confirm-query-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 2px;
+      width: 65px;
+    }
+    .clear-query-button {
+      position: absolute;
+      top: 20px;
+      left: 90px;
+      padding: 2px;
+      width: 65px;
+    }
+    .cancel-query-button {
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  }
+}
